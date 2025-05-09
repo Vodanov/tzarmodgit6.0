@@ -1,0 +1,12 @@
+
+state={
+	id=349
+	name="Dongola"
+	provinces={
+		2195 2209 4993 5229 6956 8020 8203 10944 10959 10973 10986 11023 11746 12836 12879 12979 
+	}
+	manpower=6454865
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

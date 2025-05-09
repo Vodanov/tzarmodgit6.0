@@ -1,0 +1,12 @@
+
+state={
+	id=301
+	name="STATE_301"
+	provinces={
+		2106 2152 2173 2174 2194 2208 5143 5213 8157 8169 8255 10938 10952 11023 12901 12943 12951 13134 13174 13195 
+	}
+	manpower=890100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

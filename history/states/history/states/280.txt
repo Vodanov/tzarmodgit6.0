@@ -1,0 +1,11 @@
+state={
+	id=280
+	name="STATE_896"
+	provinces={
+		1955 1977 2003 4968 5024 5027 5081 7995 8118 10791 10850 10923 12702 12725 12727 12740 12749 12768 12813 
+	}
+	manpower=6454865
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
