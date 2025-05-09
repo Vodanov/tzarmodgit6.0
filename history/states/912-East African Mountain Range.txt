@@ -1,0 +1,16 @@
+state={
+	id=912
+	name="East African Mountain Range"
+	provinces={
+		1973 4968 5024 5027 5081 7995 8118 10791 10923 12740 
+	}
+	impassable = yes
+	history = {
+		owner = ENG
+		add_core_of = ENG
+	}
+	manpower=7
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
