@@ -1125,9 +1125,9 @@ technologies = {
 			super_heavy_armor
 		}
 
-		enable_equipment_modules = {
-			tank_super_heavy_cannon
-		}
+		# enable_equipment_modules = {
+		# 	tank_super_heavy_cannon
+		# }
 
 		research_cost = 3
 		start_year = 1941
@@ -1214,7 +1214,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1936
 		folder = {
-			name = nsb_armour_folder
+			name = tankmodule_folder
 			position = { x = 3 y = @1935 }
 		}
 
@@ -1274,7 +1274,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1938
 		folder = {
-			name = nsb_armour_folder
+			name = tankmodule_folder
 			position = { x = 3 y = @1938 }
 		}
 
@@ -1335,7 +1335,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
+			name = tankmodule_folder
 			position = { x = 3 y = @1941 }
 		}
 
@@ -1382,7 +1382,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
+			name = tankmodule_folder
 			position = { x = 3 y = @1944 }
 		}
 
@@ -1443,8 +1443,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1935 }
+			name = tankmodule_folder
+			position = { x = 4 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1501,8 +1501,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1938
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1938 }
+			name = tankmodule_folder
+			position = { x = 4 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1557,8 +1557,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1941 }
+			name = tankmodule_folder
+			position = { x = 4 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1604,8 +1604,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
+			name = tankmodule_folder
+			position = { x = 4 y = @1944 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -2733,7 +2733,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = shit_guns
+			leads_to_tech = shit_modules
 			research_cost_coeff = 1
 		}
 
@@ -2742,6 +2742,7 @@ technologies = {
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_machine_gun
+			flamethrower
 			# car_AT_rifle
 		}
 
@@ -2777,6 +2778,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_medium_cannon
+			tank_high_velocity_cannon
 			tank_medium_howitzer
 			tank_auto_cannon_2	
 			tank_small_cannon_2
@@ -2818,10 +2820,12 @@ technologies = {
 		# }
 
 		enable_equipment_modules = {
-			tank_medium_howitzer_2
-			tank_medium_cannon_2	
+			tank_medium_cannon_2
+			tank_high_velocity_cannon_2
+			tank_medium_howitzer_2	
 			tank_anti_air_cannon_2
 			tank_small_cannon_3
+			tank_auto_cannon_3
 		}
 
 		research_cost = 1
@@ -2935,9 +2939,9 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_3
+			tank_high_velocity_cannon_2
 			tank_anti_air_cannon_3		
 			tank_rocket_launcher
-			tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
@@ -2998,10 +3002,10 @@ technologies = {
 			hvap_ammo
 			wet_ammo_storage
 		}
-		path = {
-			leads_to_tech = sp_armored_advanced_flamethrower_tech
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = sp_armored_advanced_flamethrower_tech
+		# 	research_cost_coeff = 1
+		# }
 		research_cost = 1
 		start_year = 1941
 		folder = {
@@ -3036,9 +3040,9 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_heavy_cannon
-			tank_high_velocity_cannon
-			tank_auto_cannon_2
-			tank_small_cannon_2
+			# tank_high_velocity_cannon
+			# tank_auto_cannon_2
+			# tank_small_cannon_2
 		}
 
 		research_cost = 1
@@ -3076,10 +3080,11 @@ technologies = {
 		# }
 
 		enable_equipment_modules = {
-			tank_heavy_cannon_2		
-			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
+			tank_super_heavy_cannon	
+			# tank_high_velocity_cannon_2
 			tank_anti_air_cannon_2
-			tank_small_cannon_3
+			# tank_small_cannon_3
 			# lc_high_velocity_cannon_turret
 			# lc_assault_gun
 			# lc_heavy_high_velocity_cannons
@@ -3146,10 +3151,10 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_cannon_3
-			tank_high_velocity_cannon_3		
+			# tank_high_velocity_cannon_3		
 			tank_anti_air_cannon_3
-			tank_small_cannon_3
-			tank_auto_cannon_3
+			# tank_small_cannon_3
+			# tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
@@ -3185,8 +3190,8 @@ technologies = {
 		research_cost = 0.3
 		start_year = 1934
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 0 y = @1935 }
+			name = tankmodule_folder
+			position = { x = 6 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -3216,8 +3221,8 @@ technologies = {
 		research_cost = 0.35
 		start_year = 1938
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 0 y = @1938 }
+			name = tankmodule_folder
+			position = { x = 6 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -3243,8 +3248,8 @@ technologies = {
 		research_cost = 1.2
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
-			position = { x = 0 y = @1941 }
+			name = tankmodule_folder
+			position = { x = 6 y = @1941 }
 		}
 
 		ai_will_do = {

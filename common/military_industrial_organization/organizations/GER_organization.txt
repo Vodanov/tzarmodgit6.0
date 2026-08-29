@@ -233,7 +233,6 @@ GER_henschel_organization = {
 	allowed = {	
 		OR = {
 			original_tag = GER 
-			original_tag = BUL
 		}
 	}
 	
@@ -561,7 +560,7 @@ GER_alkett_organization = {
 	icon = GFX_idea_GER_alkett
 	
 	allowed = {	
-		original_tag = GER 
+		original_tag = GER	
 	}
 
 	tree_header_text = {
@@ -702,9 +701,7 @@ GER_alkett_organization = {
 			#TODO_Danne fix this with a flag or something! GER should integrate CZE industries or something before doing this
 			FROM = {
 				OR = {
-					has_completed_focus = GER_fate_of_czechoslovakia
-					has_completed_focus = GER_integrate_czechoslovakia
-					has_completed_focus = GER_carve_up_czechoslovakia
+					has_completed_focus = GER_end_of_czechoslovakia
 				}
 			}
 		}

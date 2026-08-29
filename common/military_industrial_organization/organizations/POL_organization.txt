@@ -16,16 +16,9 @@ POL_pzinz_organization = {
 		OR = {
 			AND = {
 				tag = POL
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
+				
 			}
-			tag = ROM
-			AND = {
-				has_dlc = "Peace For Our Time"
-				tag = CZE
-			}
+			
 		}
 	}
 

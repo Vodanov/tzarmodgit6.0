@@ -473,7 +473,20 @@ skrubwayevents.1.t:0 "Tukhachevsky Escapes"
 skrubwayevents.1.d:0 "The NKVD has reported the Tukhachevsky has slipped away from our custody when the French were in Moscow here on a diplomatic mission. Our sources in the French Left that he has been spotted in France."
 skrubwayevents.1.a:0 "I KNEW IT! RED BONAPARTIST!!"
 
+### random austimo
 austria_skrubway_tt: "§RAustria has prepared itself for the worst we may have to invade them.§!"
 
 tankmodule_folder:0 "Armored Modules"
 tankmodule_folder_desc:0 "Tank guns and Specialized equipment for Tanks."
+
+AXIS_alkett_organization:0 "Reichswerke Alkett"
+AXIS_porsche_organization:0 "Binnigange-Porsche"
+AXIS_henschel_organization:0 "Henschel"
+AXIS_man_organization:0 "Reichswerke MAN"
+AXIS_daimler_benz_organization:0 "Diamler-Benz"
+AXIS_support_equipment_organization:0 "Hugo Boss AG"
+AXIS_tank_destoryer_organization:0 "Böhmische-Mährische Maschinenfabrik AG"
+AXIS_artillery_organization:0 "Doofenshmirtz Evil Incorporated"
+AXIS_motorized_mechanized_organization:0 "Opel AG"
+
+ALLIED_assgun_organization:0 "Montreal Locomotive Works"

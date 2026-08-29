@@ -1162,34 +1162,34 @@ guiTypes = {
 			# 	slotsize = { width = 70 height = 70 }
 			# 	format = "UPPER_LEFT"
 			# }
-			gridboxtype = {
-				name = "radio_tech_1_tree"
-				position = { x = 2400 y = 0 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-			gridboxtype = {
-				name = "armor_tech_1_tree"
-				position = { x = 0 y = 0 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-			gridboxtype = {
-				name = "tech_juggle_armor_tree"
-				position = { x = 0 y = 0 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-			gridboxtype = {
-				name = "engine_tech_1_tree"
-				position = { x = 175 y = 0 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
+			# gridboxtype = {
+			# 	name = "radio_tech_1_tree"
+			# 	position = { x = 2400 y = 0 }
+			# 	size = { width = 80% height = 80% }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UPPER_LEFT"
+			# }
+			# gridboxtype = {
+			# 	name = "armor_tech_1_tree"
+			# 	position = { x = 0 y = 0 }
+			# 	size = { width = 80% height = 80% }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UPPER_LEFT"
+			# }
+			# # gridboxtype = {
+			# # 	name = "tech_juggle_armor_tree"
+			# # 	position = { x = 0 y = 0 }
+			# # 	size = { width = 80% height = 80% }
+			# # 	slotsize = { width = 70 height = 70 }
+			# # 	format = "UPPER_LEFT"
+			# # }
+			# gridboxtype = {
+			# 	name = "engine_tech_1_tree"
+			# 	position = { x = 175 y = 0 }
+			# 	size = { width = 80% height = 80% }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UPPER_LEFT"
+			# }
 
 			# gridboxtype = {
 			# 	name = "armor_tech_1_tree"
@@ -1546,6 +1546,28 @@ guiTypes = {
 			gridboxtype = {
 				name = "shit_modules_tree"
 				position = { x= 2600 y = 0 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
+
+			gridboxtype = {
+				name = "radio_tech_1_tree"
+				position = { x = 275 y = 0 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
+			gridboxtype = {
+				name = "armor_tech_1_tree"
+				position = { x = 0 y = 0 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
+			gridboxtype = {
+				name = "engine_tech_1_tree"
+				position = { x = 175 y = 0 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"

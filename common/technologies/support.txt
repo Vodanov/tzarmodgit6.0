@@ -2438,10 +2438,10 @@ technologies = {
 			heavy_flame_tank
 			}
 		
-		enable_equipment_modules = {
-			flamethrower
-			# lc_flamethrower_turret
-		}
+		# enable_equipment_modules = {
+		# 	flamethrower
+		# 	# lc_flamethrower_turret
+		# }
 		
 		path = {
 			leads_to_tech = tech_flamethrower2

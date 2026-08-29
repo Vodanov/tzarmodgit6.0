@@ -1,0 +1,219 @@
+
+ALLIED_assgun_organization = {
+	include = generic_assault_guns_organization
+	icon = GFX_idea_CAN_canadian_pacific_railway
+	
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			original_tag = AST
+			original_tag = NZL
+			original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+}
+
+
+ALLIED_heavy_tank_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			original_tag = AST
+			# original_tag = NZL
+			original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+	available = {
+
+	}
+
+}
+
+ALLIED_infantry_tank_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_henschel
+	
+	allowed = {	
+		OR = {
+			# original_tag = ENG
+			original_tag = CAN
+			# original_tag = SAF
+			# original_tag = AST
+			original_tag = NZL
+			# original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+	
+	visible = {
+		
+	}
+
+	available = {
+
+	}
+
+}
+
+
+ALLIED_medium_tank_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_GER_MAN
+	
+	allowed = {	
+		OR = {
+			# original_tag = ENG
+			# original_tag = CAN
+			# original_tag = SAF
+			# original_tag = AST
+			original_tag = NZL
+			# original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+	
+	available = {
+
+	}
+
+}
+
+
+#Benz 
+ALLIED_generic_tank_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_GER_daimler_benz
+	
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			# original_tag = AST
+			original_tag = NZL
+			original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+	available = {
+
+	}
+
+}
+
+ALLIED_support_equipment_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_nevskoye_design_bureau
+
+	allowed = {
+		OR = {
+			# original_tag = ENG
+			# original_tag = CAN
+			original_tag = SAF
+			# original_tag = AST
+			# original_tag = NZL
+			original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+}
+
+ALLIED_tank_destoryer_organization = {
+	include = CZE_tank_destroyer_organization
+	icon = GFX_idea_CZE_skoda_plzen #New signage is expensive
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			original_tag = AST
+			original_tag = NZL
+			original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+	available = {
+		
+	}
+
+	visible = {
+		
+	}
+
+}
+
+ALLIED_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+
+	allowed = {
+		OR = {
+			# original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			# original_tag = AST
+			original_tag = NZL
+			# original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+}
+
+ALLIED_motorized_mechanized_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_opel
+
+	allowed = {
+		OR = {
+			# original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF
+			# original_tag = AST
+			# original_tag = NZL
+			# original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_motorized_mechanized_manufacturer
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+}
+
+ALLIED_infantry_equipment_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		OR = {
+			# original_tag = ENG
+			# original_tag = CAN
+			original_tag = SAF
+			# original_tag = AST
+			original_tag = NZL
+			# original_tag = RAJ
+			original_tag = FRF
+		}
+	}
+
+}
