@@ -403,7 +403,8 @@ sub_units = {
 
 		breakthrough = -0.75
 		defense = -0.25
-		hard_attack = -0.33
+		soft_attack = -0.7
+		hard_attack = -0.7
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -452,8 +453,8 @@ sub_units = {
 
 		breakthrough = -0.7
 		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		soft_attack = -0.7
+		hard_attack = -0.7
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -501,8 +502,8 @@ sub_units = {
 
 		breakthrough = -0.65
 		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		soft_attack = -0.7
+		hard_attack = -0.7
 		suppression = 0.25
 		armor_value = -0.33
 	}
@@ -548,8 +549,8 @@ sub_units = {
 		
 		breakthrough = -0.6
 		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		soft_attack = -0.7
+		hard_attack = -0.7
 		suppression = 0.25
 		armor_value = -0.33
 		
