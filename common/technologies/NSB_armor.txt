@@ -2939,7 +2939,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_3
-			tank_high_velocity_cannon_2
+			tank_high_velocity_cannon_3
 			tank_anti_air_cannon_3		
 			tank_rocket_launcher
 		}

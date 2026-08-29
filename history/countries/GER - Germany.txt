@@ -87,13 +87,14 @@ set_technology = { basic_train = 1
 	improved_light_tank_chassis = 1
 	# improved_light_art = 1
 	basic_heavy_tank_chassis = 1
+	
 	iw_small_airframe = 1
 	basic_small_airframe = 1
-		basic_medium_airframe = 1
-					aa_lmg = 1
+	aircraft_construction = 1
+	early_bombs = 1
+	aa_lmg = 1
+	range_improvements = 1
 	
-
-	naval_bomber1 = 1
 		
 	# mobile_warfare = 1
 	# trade_interdiction = 1

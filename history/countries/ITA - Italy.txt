@@ -120,12 +120,7 @@ set_variable = { ITA_export_midget_submarines_days = 90 }
 ################
 
 # ETHIOPIAN STATES ARRAY
-every_state = {
-	limit = {
-		is_initial_ethiopian_state = yes
-	}
-	add_to_array = { ROOT.ITA_initial_ethiopian_states = THIS }
-}
+
 
 #INDUSTRIALIZATION
 set_variable = { ITA_new_industrialization_program_factories_required = 100 }
@@ -341,10 +336,11 @@ set_technology = { basic_train = 1
 	#basic_heavy_tank_chassis = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	iw_small_airframe = 1
-	fighter1= 1
-		basic_medium_airframe = 1
-					aa_lmg = 1
-	naval_bomber1 = 1
+
+	aircraft_construction = 1
+	early_bombs = 1
+	aa_lmg = 1
+	range_improvements = 1
 
 	trench_warfare = 1
 	fleet_in_being = 1

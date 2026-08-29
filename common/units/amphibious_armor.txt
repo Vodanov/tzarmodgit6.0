@@ -43,7 +43,18 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-			attack = -0.1
+			attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		hills = {
+			attack = -0.20
+			defence = -0.40
+			movement = -0.2
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
 		}
 		plains = {
 			attack = -0.1
@@ -54,8 +65,8 @@ sub_units = {
 			movement = -0.4
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.45
+			defence = -0.55
 		}
 		marsh = {
 			attack = 0.3
@@ -107,23 +118,34 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.2
+			attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		hills = {
+			attack = -0.20
+			defence = -0.40
+			movement = -0.2
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+			attack = -0.3
 			movement = -0.4
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.45
+			defence = -0.55
 		}
 		marsh = {
 			attack = 0.3
@@ -175,23 +197,34 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.2
+			attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		hills = {
+			attack = -0.20
+			defence = -0.40
+			movement = -0.2
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+			attack = -0.3
 			movement = -0.4
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.45
+			defence = -0.55
 		}
 		marsh = {
 			attack = 0.3
@@ -243,23 +276,34 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.2
+			attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			attack = -0.85
+			defence = -0.85
+			movement = -0.85
+		}
+		hills = {
+			attack = -0.20
+			defence = -0.40
+			movement = -0.2
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+			attack = -0.3
 			movement = -0.4
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.45
+			defence = -0.55
 		}
 		marsh = {
 			attack = 0.3

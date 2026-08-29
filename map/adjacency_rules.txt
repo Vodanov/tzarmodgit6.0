@@ -410,33 +410,28 @@ adjacency_rule = {
 	icon = 6979
 	offset = { 9 0 6 }
 }
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "Berlin-Madrid"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes

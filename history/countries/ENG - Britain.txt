@@ -39,10 +39,11 @@ set_technology = {
 	tech_field_hospital = 1
 	tech_mountaineers = 1
 	
-	# trench_warfare = 1
-
-	
-	# fleet_in_being = 1
+	basic_small_airframe = 1
+	aircraft_construction = 1
+	early_bombs = 1
+	aa_lmg = 1
+	range_improvements = 1
 
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -54,14 +55,6 @@ set_technology = {
 
 	synth_oil_experiments = 1
 
-	# air_superiority = 1
-	# forward_interception = 1 
-	# fighter_ace_initiative = 1 
-	# dive_bombing = 1
-	# dogfighting_experience = 1
-	# interwar_antitank = 1
-	# multialtitude_flying = 1
-	# dive_bombing = 1
 	armored_car1 = 1
 
 }

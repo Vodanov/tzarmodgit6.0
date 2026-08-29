@@ -605,7 +605,7 @@ set_popularities = {
 create_faction = Comintern
 add_to_faction = SOV
 add_to_faction = MON
-add_to_faction = TAN
+
 
 
 
@@ -617,7 +617,7 @@ set_war_support = 0.3
 # Starting tech
 set_technology = {
 # WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
-	shocktroops = 1
+
 	tech_logistics_company = 1
 	tech_maintenance_company = 1
 	tech_field_hospital = 1
@@ -634,19 +634,22 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
 	radio = 1
 	interwar_antitank = 1
 	iw_small_airframe = 1
-	basic_small_airframe = 1
 	basic_medium_airframe = 1
+
+	basic_small_airframe = 1
+	aircraft_construction = 1
+	early_bombs = 1
 	aa_lmg = 1
-	shocktroops = 1
-	armored_car_chassis_0 = 1
+	range_improvements = 1
+	
+
 }
 
 if = {
