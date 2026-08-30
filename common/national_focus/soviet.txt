@@ -457,31 +457,16 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			SOV_third_five_year_plan_available = yes
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_2_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_2 }
-			}
-			
+	
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.2 }
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-				}
-				custom_effect_tooltip = TZAR_SOV_third_five_year_plan_ns_tt
+		
+			swap_ideas = { 
+			remove_idea  = SOV_second_five_year_plan 
+			add_idea = SOV_third_five_year_plan }
 
 				add_tech_bonus = {
 					name = SOV_third_five_year_plan_default
@@ -489,24 +474,9 @@ focus_tree = {
 					uses = 2
 					category = construction_tech
 				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_third_five_year_plan_ns_alt_tt
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-				}
-
-				add_tech_bonus = {
-					name = SOV_third_five_year_plan_alt
-					bonus = 0.75
-					uses = 2
-					category = construction_tech
-				}
-			}
-		}
-	}
+			}}
+		
+	
 
 	focus = {
 		id = SOV_reorganize_the_pc_of_heavy_industry
@@ -528,19 +498,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.2 }
-			}
-			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
-			if = {
-				limit = {
-					has_government = communism
-				}
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier }
-				}
+		
+			swap_ideas = { 
+			remove_idea  = SOV_third_five_year_plan 
+			add_idea = SOV_third_five_year_plan_heavy_industry }
 
 				add_tech_bonus = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
@@ -550,23 +511,8 @@ focus_tree = {
 					category = electronics
 				}
 			}
-			else = {
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt}
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
-				}
-
-				add_tech_bonus = {
-					name = SOV_reorganize_the_pc_of_heavy_industry_name_alt
-					bonus = 1.0
-					uses = 3
-					category = industry
-					category = electronics
-				}
-			}
 		}
-	}
+	
 
 	focus = {
 		id = SOV_industrial_modernization
@@ -587,9 +533,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
-			add_to_variable = { SOV_fyp_line_change_production_efficiency_factor = 0.1 }
-			custom_effect_tooltip = SOV_industrial_modernization_ns_tt
+				swap_ideas = {
+				remove_idea = SOV_third_five_year_plan_heavy_industry
+				add_idea = SOV_third_five_year_plan_heavy_industry_2 }
 		}
 	}
 
@@ -611,14 +557,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			#Modify Third Year Plan NS
-			set_variable = { SOV_fyp_local_resources_factor = 0.1 }
-			custom_effect_tooltip = SOV_increase_state_reserves_ns_tt
-
-			custom_effect_tooltip = SOV_increase_state_reserves_silo_tt
-			set_temp_variable = { temp_targets_index = 0 }
 			
-							add_resource = {
+			add_resource = {
 					type = steel
 					amount = 23
 					state = 252
@@ -630,7 +570,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = aluminium
-					amount = 25
+					amount = 50
 					state = 256
 				}
 				add_resource = {
@@ -681,6 +621,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+		
+		swap_ideas = { 
+			remove_idea  = SOV_third_five_year_plan 
+			add_idea = SOV_third_five_year_plan_armaments }
+		
+		
+		
 			add_tech_bonus = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
 					bonus = 1.0
@@ -688,27 +635,7 @@ focus_tree = {
 					category = industry
 					category = electronics
 				}
-			hidden_effect = {
-				set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0 } #Remove Civ constr speed
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-				}
-			}
-			else = {
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
-				}
-			}
-			custom_effect_tooltip = TZAR_SOV_shift_to_armaments_production_ns_tt
+
 
 			add_tech_bonus = {
 				name = SOV_shift_to_armaments_production
@@ -737,10 +664,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.1 } 
-			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } 
-			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.05 }
-			custom_effect_tooltip = SOV_optimize_production_lines_ns_tt
+		
+			swap_ideas = {
+			remove_idea = SOV_third_five_year_plan_armaments
+			add_idea = SOV_third_five_year_plan_armaments_2 } 
+
 
 			add_tech_bonus = {
 				name = SOV_industrial_modernization
@@ -763,17 +691,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			any_owned_state = {
-				has_resources_amount = {
-					resource = steel
-					amount > 0
-				}
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
-				}
-			}
 			SOV_third_five_year_plan_available = yes
 			
 		}
@@ -781,10 +698,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			set_variable = { SOV_fyp_industrial_capacity_factory = 0.05 }
-			set_variable = { SOV_fyp_industrial_capacity_dockyard = 0.05 }
-
-			custom_effect_tooltip = SOV_steel_casting_industry_ns_tt
+		
+			add_ideas =  SOV_steel_casting_industry 
 
 			random_owned_controlled_state = {
 				limit = {
@@ -958,9 +873,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-				set_variable = { SOV_fyp_fuel_gain_factor_from_states = 0.05 }
-				set_variable = { SOV_fyp_production_oil_factor = 0.05 }
-				custom_effect_tooltip = SOV_oil_production_ns_tt
 				229 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
@@ -4052,7 +3964,7 @@ focus_tree = {
 					idea = officers_purged
 					days = 700
 				}
-			add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
+			add_ideas =  SOV_the_politburo
 			}
 			custom_effect_tooltip = SOV_the_centre_ns_tt
 
@@ -4092,10 +4004,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
-			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
-			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
+			swap_ideas = {
+			remove_idea = SOV_the_politburo
+			add_idea = SOV_the_politburo_2 }
 
 			add_political_power = 75
 
@@ -4247,12 +4158,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
-			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
-			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
-			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
 
-			add_political_power = 50
+			add_political_power = 100
 
 			SOV_paranoia_medium_decrease_effect = yes
 		}
@@ -4274,10 +4181,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.15 }
-			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.075 } 
-			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
-			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
+			swap_ideas = {
+			remove_idea = SOV_the_politburo_2
+			add_idea = SOV_the_politburo_3 }
+		
 			add_political_power = 50
 
 			add_stability = -0.05
@@ -4455,9 +4362,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }
-			add_to_variable = { SOV_the_politburo_max_surrender_limit_offset = 0.05 }
-			custom_effect_tooltip = SOV_the_workers_dictatorship_ns_tt
+			swap_ideas = {
+			remove_idea = SOV_the_politburo_4
+			add_idea = SOV_the_politburo_5 }
 
 			add_political_power = 50
 
@@ -4482,9 +4389,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_max_command_power = 20 }
-			add_to_variable = { SOV_the_politburo_mobilization_speed = 0.05 }
-			custom_effect_tooltip = SOV_organization_centralization_discipline_ns_tt
+			swap_ideas = {
+			remove_idea = SOV_the_politburo_3
+			add_idea = SOV_the_politburo_4 }
 
 			add_political_power = 50
 			217 = {

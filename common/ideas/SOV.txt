@@ -11,24 +11,157 @@ ideas = {
 
 	country= {
 
-		SOV_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
-			name = SOV_second_five_year_plan_dynamic_modifier
-
-			removal_cost = -1
-
+		SOV_second_five_year_plan = {
 			picture = SOV_second_five_year_plan
-
-			allowed = {
-				always = no
-			}
 
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_expected_value = 0.05
 				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
+		
+		
+		SOV_third_five_year_plan = {
+		picture = SOV_third_five_year_plan
+		
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = -0.10
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_expected_value = 0.05
+		production_speed_arms_factory_factor = 0.10
+		}
+		}
+		
+		SOV_third_five_year_plan_armaments = {
+		
+		picture = SOV_third_five_year_plan
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = -0.10
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_expected_value = 0.05
+		production_speed_arms_factory_factor = 0.20
+		}}
+		
+		SOV_third_five_year_plan_armaments_2 = {
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = -0.05
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_expected_value = 0.05
+		production_speed_arms_factory_factor = 0.20
+		industrial_capacity_factory = 0.05
+		production_factory_start_efficiency_factor = 0.05
+		}}
+		
+		
+		SOV_third_five_year_plan_heavy_industry = {
+		
+		picture = SOV_third_five_year_plan
+		
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = -0.10
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_arms_factory_factor = 0.10
+		}
+		}
+		
+		SOV_third_five_year_plan_heavy_industry_2 = {
+		
+		picture = SOV_third_five_year_plan
+		
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = -0.10
+		production_factory_max_efficiency_factor = 0.10
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_arms_factory_factor = 0.10
+		}
+		}
+		
+		
+		SOV_steel_casting_industry = {
+		
+		picture = generic_production_bonus
+		
+		modifier = {
+		industrial_capacity_factory = 0.1
+		}
+		}
+		
+		SOV_the_politburo = {
+		
+		picture = SOV_the_politburo
+		
+		modifier = {
+		communism_drift = 0.05
+		}
+		}
+		
+		SOV_the_politburo_2 = {
+		
+		picture = SOV_the_politburo
+		
+		modifier = {
+		communism_drift = 0.05
+		drift_defence_factor = 0.05
+		defensive_war_stability_factor = 0.25
+		}
+		}
+		
+		SOV_the_politburo_3 = {
+		
+		picture = SOV_the_politburo
+		
+		modifier = {
+		communism_drift = 0.05
+		drift_defence_factor = 0.05
+		defensive_war_stability_factor = 0.25
+		consumer_goods_expected_value = -0.02
+		global_building_slots_factor = 0.1
+		}
+		}
+		
+		SOV_the_politburo_4 = {
+		
+		picture = SOV_the_politburo
+		
+		modifier = {
+		communism_drift = 0.05
+		drift_defence_factor = 0.05
+		defensive_war_stability_factor = 0.25
+		consumer_goods_expected_value = -0.02
+		production_speed_buildings_factor = 0.1
+		global_building_slots_factor = 0.1
+		}
+		}
+		
+	SOV_the_politburo_5 = {
+		
+		picture = SOV_the_politburo
+		
+		modifier = {
+		communism_drift = 0.05
+		drift_defence_factor = 0.05
+		defensive_war_stability_factor = 0.25
+		consumer_goods_expected_value = -0.02
+		production_speed_buildings_factor = 0.1
+		global_building_slots_factor = 0.3
+		}
+		}
+		
+		
+		
+		
+		
 		SOV_mill_buff = {
 			name = "Military Specialists"
 
