@@ -28,6 +28,7 @@ new_mobile_warfare = {
     }
 
     # EFFECTS
+	additional_brigade_column_size = 1
 	planning_speed = 0.20
 	army_speed_factor = 0.10
 	category_army = {
@@ -147,6 +148,7 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
+	additional_brigade_column_size = 1
     category_army = {
     soft_attack = 0.1
     }
@@ -271,8 +273,8 @@ grand_battleplan = {
 
     # EFFECTS
     enable_tactic = tactic_planned_attack
-    
-    max_planning = 0.3
+    additional_brigade_column_size = 1
+    max_planning = 0.20
     planning_speed = 0.10
 
     milestones = {
@@ -336,7 +338,6 @@ grand_battleplan = {
         }
         {
             #Operations
-            coordination_bonus = 0.1
             max_command_power = 30
 
             effect = {
@@ -381,6 +382,7 @@ mass_assault = {
     }
 
     # EFFECTS
+	additional_brigade_column_size = 1
     no_supply_grace = 256
 	supply_consumption_factor = -0.10
     out_of_supply_factor = -0.35
