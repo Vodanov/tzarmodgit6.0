@@ -188,7 +188,7 @@ flying_batteries = {
     }
 
     motorized_rocket_brigade = {
-        soft_attack = 0.50
+        soft_attack = 0.25
     }
 
     rewards = {
