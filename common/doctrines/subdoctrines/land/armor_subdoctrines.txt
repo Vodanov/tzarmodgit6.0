@@ -376,7 +376,7 @@ tank_destroyer_force = {
 
     category_all_armor = {
         defense = 0.1
-        hard_attack = 0.1
+        hard_attack = 0.05
         ap_attack = 0.1
     }
 

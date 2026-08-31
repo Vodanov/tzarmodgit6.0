@@ -188,7 +188,7 @@ flying_batteries = {
     }
 
     motorized_rocket_brigade = {
-        soft_attack = 1
+        soft_attack = 0.50
     }
 
     rewards = {
@@ -202,12 +202,12 @@ flying_batteries = {
         counter_battery_tasks = {
             
             motorized_rocket_brigade = {
-			breakthrough = 1
+			breakthrough = 1.5
 			}
         }
         ballistics_corrections = {
           rocket_artillery_brigade = {
-			breakthrough = 0.05
+			breakthrough = 0.1
 			}
 
         }
@@ -220,7 +220,7 @@ flying_batteries = {
         }
         wide_dispersal_positions = {
             rocket_artillery_brigade = {
-                soft_attack = 0.05
+                soft_attack = 0.1
             }
         }
     }
