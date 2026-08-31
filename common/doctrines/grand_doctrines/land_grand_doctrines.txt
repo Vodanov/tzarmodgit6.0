@@ -33,7 +33,11 @@ new_mobile_warfare = {
 	army_speed_factor = 0.10
 	category_armor = {
     breakthrough = 0.2
-}
+	}
+
+	category_tanks = {
+      breakthrough = 0.20  
+    } 
 	enable_tactic = tactic_unexpected_thrust
 	
 
