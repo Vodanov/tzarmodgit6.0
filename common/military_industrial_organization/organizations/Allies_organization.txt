@@ -20,7 +20,7 @@ ALLIED_assgun_organization = {
 
 ALLIED_heavy_tank_organization = {
 	include = generic_heavy_tank_organization
-	icon = GFX_idea_porsche
+	icon = GFX_idea_generic_armor
 	
 	allowed = {	
 		OR = {
@@ -42,7 +42,7 @@ ALLIED_heavy_tank_organization = {
 
 ALLIED_infantry_tank_organization = {
 	include = generic_infantry_tank_organization
-	icon = GFX_idea_henschel
+	icon = GFX_idea_usa_general_motors
 	
 	allowed = {	
 		OR = {
@@ -69,7 +69,7 @@ ALLIED_infantry_tank_organization = {
 
 ALLIED_medium_tank_organization = {
 	include = generic_medium_tank_organization
-	icon = GFX_idea_GER_MAN
+	icon = GFX_idea_AST_nuffield_mechanizations_and_aero
 	
 	allowed = {	
 		OR = {
@@ -93,7 +93,7 @@ ALLIED_medium_tank_organization = {
 #Benz 
 ALLIED_generic_tank_organization = {
 	include = generic_tank_organization
-	icon = GFX_idea_GER_daimler_benz
+	icon = GFX_idea_ENG_corgis_1
 	
 	allowed = {	
 		OR = {
@@ -115,7 +115,7 @@ ALLIED_generic_tank_organization = {
 
 ALLIED_support_equipment_organization = {
 	include = generic_support_equipment_organization
-	icon = GFX_idea_nevskoye_design_bureau
+	icon = GFX_idea_eng_steady_as_she_goes
 
 	allowed = {
 		OR = {
@@ -159,7 +159,7 @@ ALLIED_tank_destoryer_organization = {
 
 ALLIED_artillery_organization = {
 	include = generic_artillery_organization
-	icon = GFX_idea_generic_artillery_manufacturer_2
+	icon = GFX_idea_generic_artillery_regiments
 
 	allowed = {
 		OR = {
@@ -177,8 +177,7 @@ ALLIED_artillery_organization = {
 
 ALLIED_motorized_mechanized_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_opel
-
+	icon = GFX_idea_usa_general_motors
 	allowed = {
 		OR = {
 			# original_tag = ENG
@@ -202,7 +201,7 @@ ALLIED_motorized_mechanized_organization = {
 
 ALLIED_infantry_equipment_organization = {
 	include = generic_infantry_equipment_organization
-	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	icon = GFX_idea_AST_royal_australian_air_force
 
 	allowed = {
 		OR = {
