@@ -31,9 +31,9 @@ new_mobile_warfare = {
 	additional_brigade_column_size = 1
 	planning_speed = 0.20
 	army_speed_factor = 0.10
-	category_army = {
-    armor_breakthrough_factor = 0.2
-}
+	category_tanks = {
+      breakthrough = 0.20  
+    } 
 	enable_tactic = tactic_unexpected_thrust
 	
 
