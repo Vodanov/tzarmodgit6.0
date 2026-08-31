@@ -390,7 +390,7 @@ sub_units = {
 		divisional = no
 
 		need = {
-			light_tank_destroyer_chassis = 10
+			light_tank_destroyer_chassis = 4
 		}
 		manpower = 180
 		max_organisation = 0
@@ -403,8 +403,8 @@ sub_units = {
 
 		breakthrough = -0.75
 		defense = -0.25
-		soft_attack = -0.9
-		hard_attack = -0.9
+		soft_attack = -0.975
+		hard_attack = -0.975
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -440,7 +440,7 @@ sub_units = {
 
 
 		need = {
-			medium_tank_destroyer_chassis = 10
+			medium_tank_destroyer_chassis = 4
 		}
 		manpower = 180
 		max_organisation = 0
@@ -453,8 +453,8 @@ sub_units = {
 
 		breakthrough = -0.7
 		defense = -0.25
-		soft_attack = -0.9
-		hard_attack = -0.9
+		soft_attack = -0.99
+		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -502,8 +502,8 @@ sub_units = {
 
 		breakthrough = -0.65
 		defense = -0.25
-		soft_attack = -0.9
-		hard_attack = -0.9
+		soft_attack = -0.99
+		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
 	}
@@ -536,7 +536,7 @@ sub_units = {
 		}
 
 		need = {
-			modern_tank_destroyer_chassis = 10
+			modern_tank_destroyer_chassis = 4
 		}
 		manpower = 180
 		max_organisation = 0
@@ -549,8 +549,8 @@ sub_units = {
 		
 		breakthrough = -0.6
 		defense = -0.25
-		soft_attack = -0.92
-		hard_attack = -0.92
+		soft_attack = -0.99
+		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
 		

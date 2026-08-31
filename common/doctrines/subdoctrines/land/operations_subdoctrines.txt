@@ -445,7 +445,7 @@ rapid_domination = {
         soft_attack = 0.1
     }
     category_line_artillery = {
-        soft_attack = 0.1
+        soft_attack = 0.05
     }
 
 
@@ -492,7 +492,7 @@ rapid_domination = {
         #4
             category_support_battalions = {
                 max_organisation = 10
-                soft_attack = 0.1
+                soft_attack = 0.075
             }
         }
         shock_and_awe = {

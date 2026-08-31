@@ -32,7 +32,7 @@ fire_concentration = {
      enable_tactic = tactic_overwhelming_fire
 
     category_line_artillery = {
-        defense = 0.05
+        defense = 0.025
     }
     category_line_artillery = {
         max_organisation = 5
@@ -43,7 +43,7 @@ fire_concentration = {
         predicted_fire = {
         #1
             category_line_artillery = {
-                defense = 0.05
+                defense = 0.025
             }
         }
 
@@ -51,17 +51,17 @@ fire_concentration = {
         #2
             
             artillery_brigade = {
-                soft_attack = 0.05
+                soft_attack = 0.025
             }
             rocket_artillery_brigade = {
-                soft_attack = 0.05
+                soft_attack = 0.025
             }		
 			
         }
         artillery_groups = {
         #3
             category_line_artillery = {
-                breakthrough = 0.1
+                breakthrough = 0.05
             }
         }
         dedicated_air_support = {
@@ -77,10 +77,10 @@ fire_concentration = {
                 hard_attack = 0.1
             }
             artillery_brigade = {
-                soft_attack = 0.05
+                soft_attack = 0.025
             }
             rocket_artillery_brigade = {
-                soft_attack = 0.05
+                soft_attack = 0.025
             }
         }
     }

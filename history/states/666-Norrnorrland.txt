@@ -5,7 +5,7 @@ state = {
 	state_category = rural
 
 	resources = {
-		tungsten = 44
+		tungsten = 100
 		steel = 50
 		chromium = 25
 	}
@@ -34,7 +34,7 @@ state = {
 		}
 		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			industrial_complex = 1
 
 			9108 = {
