@@ -20,7 +20,7 @@ new_mobile_warfare = {
         }
     }
 
-    tracks = {
+   tracks = {
         infantry
         combat_support
         armor
@@ -38,8 +38,6 @@ new_mobile_warfare = {
 	category_tanks = {
       breakthrough = 0.20  
     } 
-	enable_tactic = tactic_unexpected_thrust
-	
 
     milestones = {
         {
@@ -278,7 +276,7 @@ grand_battleplan = {
     # EFFECTS
     enable_tactic = tactic_planned_attack
     additional_brigade_column_size = 1
-    max_planning = 0.20
+    max_planning = 0.125
     planning_speed = 0.10
 
     milestones = {
