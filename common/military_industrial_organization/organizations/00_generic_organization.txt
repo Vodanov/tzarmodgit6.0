@@ -7533,6 +7533,7 @@ generic_motorized_mechanized_organization = {
 		mechanized_equipment
 		motorized_rocket_equipment
 		# motorbike_equipment
+		amphibious_mechanized_equipment
 	}
 	
 	research_categories = {

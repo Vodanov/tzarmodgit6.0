@@ -1,6 +1,73 @@
 ideas = {
-    country = {
+    hidden_ideas = {
+		### fake errors?
+		GEN_cheaper_amphib = {
+			allowed = {
+				always = no # Triggered via tech
+			}
+			cancel = {
+				NOT = {
+					has_mastery_level = {
+						amount = 5
+						sub_doctrine = marines_1
+					}
+				}
+			}
+			picture = generic_fascism_drift_bonus
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		czech_mech_wave_doctrine = {
+			picture = generic_license_production
+			allowed = {
+				always = no # Triggered via tech
+			}
+			cancel = {
+				NOT = {
+					has_mastery_level = {
+						amount = 2
+						sub_doctrine = streamlined_deployment
+					}
+				}
+			}
+			equipment_bonus = {
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				} 
+			}
+		}
+		czech_armor_wave_doctrine = {
+			picture = generic_license_production
+			allowed = {
+				always = no # Triggered via tech
+			}
+			cancel = {
+				NOT = {
+					has_mastery_level = {
+						amount = 5
+						sub_doctrine = streamlined_deployment
+					}
+				}
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+	}
+	country = {
 		
+
 		TUR_kemalist_army_officers_powerful_loyal = { 
 
 			allowed = {

@@ -1064,7 +1064,7 @@ equipments = {
 		air_defence = 7
 		weight = 4
 		naval_strike_attack = 1
-		naval_strike_targetting = 1
+		naval_strike_targetting = 7.5
 
 		lend_lease_cost = 8
 	}
@@ -1171,7 +1171,7 @@ equipments = {
 		air_defence = 18
 		weight = 6
 		naval_strike_attack = 1
-		naval_strike_targetting = 1
+		naval_strike_targetting = 7.5
 		build_cost_ic = 48
 		resources = {
 			aluminium = 3
@@ -1283,7 +1283,7 @@ equipments = {
 		air_defence = 20
 		weight = 6
 		naval_strike_attack = 1
-		naval_strike_targetting = 1
+		naval_strike_targetting = 7.5
 		build_cost_ic = 50
 		resources = {
 			aluminium = 4
@@ -1401,7 +1401,7 @@ equipments = {
 		air_defence = 20
 		weight = 6
 		naval_strike_attack = 1
-		naval_strike_targetting = 1
+		naval_strike_targetting = 7.5
 		build_cost_ic = 60
 		resources = {
 			aluminium = 4
@@ -1544,7 +1544,7 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
-		can_license = no	
+		
 
 		module_slots = {
 			fixed_main_weapon_slot = {

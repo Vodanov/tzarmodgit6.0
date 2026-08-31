@@ -160,37 +160,17 @@ streamlined_deployment = {
         always = yes
     }
 
-        ai_will_do = {
-
-        base = 1
-        modifier = {
-            factor = 25
-            OR = {
-                original_tag = SOV 
-                original_tag = CHI 
-                original_tag = PRC 
-            }
-        }
-
-    }
-
     category_all_armor = {
-    build_cost_ic = -0.05
-}
+	    air_attack = 0.1
+    }
 
     rewards = {
         flexible_armored_battalions = {
-
-            category_all_armor = {
-    build_cost_ic = -0.05
-	air_attack = 0.1
-}
-
-
+            
         }
         mechanized_wave = {
-            mechanized = {
-				build_cost_ic = -0.1
+            effect = {
+                add_ideas = czech_mech_wave_doctrine
             }
             category_all_armor = {
                 default_morale = 0.05
@@ -213,6 +193,9 @@ streamlined_deployment = {
 
         }
         continuous_offensives = {
+            effect = {
+                add_ideas = czech_armor_wave_doctrine
+            }
             category_all_armor = {
                 default_morale = 0.05
                 max_organisation = 3
