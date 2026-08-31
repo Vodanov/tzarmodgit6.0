@@ -253,36 +253,36 @@ sub_units = {
 		ap_attack = 0.15
 		suppression = 1.25
 
-		forest = {
+		#forest = {
 		    attack = -0.5
 			movement = -0.4
 		}
-		hills = {
+		#hills = {
 		    attack = -0.3
 		}
-		mountain = 	{
+		#mountain = 	{
 		    attack = -0.4
 		}
-		jungle = {
+		#jungle = {
 		    attack = -0.7
 			movement = -0.4
 		}
-		marsh = {
+		#marsh = {
 		    attack = -0.5 
 			movement = -0.2
 		}
-		urban = {
+		#urban = {
 			attack = -0.6
 			defence = -0.2
 		}
-		river = { 
+		#river = { 
 			attack = -0.5
 			movement = -0.5
 		}
-		amphibious = { 
+		#amphibious = { 
 			attack = -1.0
 		}
-		fort = {
+		#fort = {
 			attack = 0.3
 		}
 	}
@@ -327,33 +327,33 @@ sub_units = {
 		ap_attack = 0.15
 		suppression = 1.25
 		
-		forest = {
+		#forest = {
 		    attack = -0.3
 			movement = -0.4
 		}
-		hills = 	{
+		#hills = 	{
 		    attack = -0.1
 		}
-		mountain = 	{
+		#mountain = 	{
 		    attack = -0.2
 		}
-		jungle = {
+		#jungle = {
 		    attack = -0.4
 			movement = -0.4
 		}
-		marsh = {
+		#marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
-		urban = {
+		#urban = {
 			attack = -0.4
 			defence = -0.1
 		}
-		river = { 
+		#river = { 
 			attack = -0.2 
 			movement = -0.2
 		}
-		amphibious = { 
+		#amphibious = { 
 			attack = -0.7
 		}
 	}
@@ -403,8 +403,8 @@ sub_units = {
 
 		breakthrough = -0.75
 		defense = -0.25
-		soft_attack = -0.7
-		hard_attack = -0.7
+		soft_attack = -0.9
+		hard_attack = -0.9
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -453,8 +453,8 @@ sub_units = {
 
 		breakthrough = -0.7
 		defense = -0.25
-		soft_attack = -0.7
-		hard_attack = -0.7
+		soft_attack = -0.9
+		hard_attack = -0.9
 		suppression = 0.25
 		armor_value = -0.33
 		
@@ -502,8 +502,8 @@ sub_units = {
 
 		breakthrough = -0.65
 		defense = -0.25
-		soft_attack = -0.7
-		hard_attack = -0.7
+		soft_attack = -0.9
+		hard_attack = -0.9
 		suppression = 0.25
 		armor_value = -0.33
 	}
@@ -549,8 +549,8 @@ sub_units = {
 		
 		breakthrough = -0.6
 		defense = -0.25
-		soft_attack = -0.7
-		hard_attack = -0.7
+		soft_attack = -0.92
+		hard_attack = -0.92
 		suppression = 0.25
 		armor_value = -0.33
 		
