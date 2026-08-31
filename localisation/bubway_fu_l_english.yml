@@ -479,6 +479,9 @@ austria_skrubway_tt: "§RAustria has prepared itself for the worst we may have t
 tankmodule_folder:0 "Armored Modules"
 tankmodule_folder_desc:0 "Tank guns and Specialized equipment for Tanks."
 
+czech_mech_wave_doctrine:0 "Mass Mechanisation"
+czech_armor_wave_doctrine:0 "Zixium Armored Plating"
+
 AXIS_alkett_organization:0 "Reichswerke Alkett"
 AXIS_porsche_organization:0 "Binnigange-Porsche"
 AXIS_henschel_organization:0 "Henschel"
