@@ -101,38 +101,38 @@ division_template = {
                 }
 }
 	
-division_template = {
-                name = "Gajhastas"
-                is_locked = no
-                #division_names_group = NAMELIST_ID # optional
-                priority = 1 # optional 
-                #template_counter = 108 # optional
-                regiments = {
-                    elephantry = { x = 0 y = 0 }
-                    elephantry = { x = 0 y = 1 }
-                    elephantry = { x = 0 y = 2 }
-                    elephantry = { x = 0 y = 3 }
-					elephantry = { x = 1 y = 0 }
-					elephantry = { x = 1 y = 1 }
-                    elephantry = { x = 1 y = 2 }
-                    elephantry = { x = 1 y = 3 }
-					elephantry = { x = 2 y = 0 }
-					elephantry = { x = 2 y = 1 }
-                    elephantry = { x = 2 y = 2 }
-                    elephantry = { x = 2 y = 3 }
-					elephantry = { x = 3 y = 0 }
-					elephantry = { x = 3 y = 1 }
-                    elephantry = { x = 3 y = 2 }
-					elephantry = { x = 3 y = 3 }
+# division_template = {
+#                 name = "Gajhastas"
+#                 is_locked = no
+#                 #division_names_group = NAMELIST_ID # optional
+#                 priority = 1 # optional 
+#                 #template_counter = 108 # optional
+#                 regiments = {
+#                     elephantry = { x = 0 y = 0 }
+#                     elephantry = { x = 0 y = 1 }
+#                     elephantry = { x = 0 y = 2 }
+#                     elephantry = { x = 0 y = 3 }
+# 					elephantry = { x = 1 y = 0 }
+# 					elephantry = { x = 1 y = 1 }
+#                     elephantry = { x = 1 y = 2 }
+#                     elephantry = { x = 1 y = 3 }
+# 					elephantry = { x = 2 y = 0 }
+# 					elephantry = { x = 2 y = 1 }
+#                     elephantry = { x = 2 y = 2 }
+#                     elephantry = { x = 2 y = 3 }
+# 					elephantry = { x = 3 y = 0 }
+# 					elephantry = { x = 3 y = 1 }
+#                     elephantry = { x = 3 y = 2 }
+# 					elephantry = { x = 3 y = 3 }
 					
-                }
-                support = {
-                    recon = { x = 0 y = 0 }
-					engineer = { x = 0 y = 1 }
-					artillery = { x = 0 y = 2 }
-					anti_air = { x = 0 y = 3 }
-                }
-}	
+#                 }
+#                 support = {
+#                     recon = { x = 0 y = 0 }
+# 					engineer = { x = 0 y = 1 }
+# 					artillery = { x = 0 y = 2 }
+# 					anti_air = { x = 0 y = 3 }
+#                 }
+# }	
 ####### OOB #######
 units = {
 
@@ -384,6 +384,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.12
 		efficiency = 50
+		industrial_manufacturer = mio:RAJ_ammunition_factory_khadki_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -393,6 +394,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:ALLIED_support_equipment_organization
 	}
 
 	add_equipment_production = {
@@ -403,6 +405,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:RAJ_ordnance_factory_kanpur_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -412,5 +415,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:RAJ_ordnance_factory_kanpur_organization
 	}
 }

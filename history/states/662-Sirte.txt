@@ -12,6 +12,10 @@ state={
 		}
 		
 	}
+	resources = {
+		oil = 40
+		rubber = 20
+	}
 	manpower=13213
 	buildings_max_level_factor=1
 	state_category=wasteland

@@ -30,7 +30,7 @@ set_technology = { basic_train = 1
 	synth_oil_experiments = 1
 	motorised_infantry = 1
 	camelry = 1 
-	elephantry = 1
+	# elephantry = 1
 	armored_car1 = 1
 }
 
