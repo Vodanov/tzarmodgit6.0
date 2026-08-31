@@ -207,7 +207,7 @@ flying_batteries = {
         }
         ballistics_corrections = {
           rocket_artillery_brigade = {
-			breakthrough = 0.2
+			breakthrough = 0.05
 			}
 
         }
@@ -220,7 +220,7 @@ flying_batteries = {
         }
         wide_dispersal_positions = {
             rocket_artillery_brigade = {
-                soft_attack = 0.2
+                soft_attack = 0.05
             }
         }
     }
