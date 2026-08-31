@@ -233,9 +233,9 @@ grand_assault = {
     }
 
     # EFFECTS
-    max_planning = 0.1
+    max_planning = 0.05
     category_army = {
-        breakthrough = 0.1
+        breakthrough = 0.025
         soft_attack = 0.05
     }
 
@@ -249,7 +249,7 @@ grand_assault = {
         }
         multiple_attack_directions = {
         #2
-            category_army = {
+            category_all_infantry = {
                 breakthrough = 0.15
             }
         }
