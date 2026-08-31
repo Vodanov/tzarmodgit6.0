@@ -253,38 +253,38 @@ sub_units = {
 		ap_attack = 0.15
 		suppression = 1.25
 
-		#forest = {
-		    attack = -0.5
-			movement = -0.4
-		}
-		#hills = {
-		    attack = -0.3
-		}
-		#mountain = 	{
-		    attack = -0.4
-		}
-		#jungle = {
-		    attack = -0.7
-			movement = -0.4
-		}
-		#marsh = {
-		    attack = -0.5 
-			movement = -0.2
-		}
-		#urban = {
-			attack = -0.6
-			defence = -0.2
-		}
-		#river = { 
-			attack = -0.5
-			movement = -0.5
-		}
-		#amphibious = { 
-			attack = -1.0
-		}
-		#fort = {
-			attack = 0.3
-		}
+		# forest = {
+		#     attack = -0.5
+		# 	movement = -0.4
+		# }
+		# hills = {
+		#     attack = -0.3
+		# }
+		# mountain = 	{
+		#     attack = -0.4
+		# }
+		# jungle = {
+		#     attack = -0.7
+		# 	movement = -0.4
+		# }
+		# marsh = {
+		#     attack = -0.5 
+		# 	movement = -0.2
+		# }
+		# urban = {
+		# 	attack = -0.6
+		# 	defence = -0.2
+		# }
+		# river = { 
+		# 	attack = -0.5
+		# 	movement = -0.5
+		# }
+		# amphibious = { 
+		# 	attack = -1.0
+		# }
+		# fort = {
+		# 	attack = 0.3
+		# }
 	}
 	
 	modern_tank_destroyer_brigade = {
@@ -327,35 +327,35 @@ sub_units = {
 		ap_attack = 0.15
 		suppression = 1.25
 		
-		#forest = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		#hills = 	{
-		    attack = -0.1
-		}
-		#mountain = 	{
-		    attack = -0.2
-		}
-		#jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		#marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		#urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		#river = { 
-			attack = -0.2 
-			movement = -0.2
-		}
-		#amphibious = { 
-			attack = -0.7
-		}
+		# forest = {
+		#     attack = -0.3
+		# 	movement = -0.4
+		# }
+		# hills = 	{
+		#     attack = -0.1
+		# }
+		# mountain = 	{
+		#     attack = -0.2
+		# }
+		# jungle = {
+		#     attack = -0.4
+		# 	movement = -0.4
+		# }
+		# marsh = {
+		#     attack = -0.1 
+		# 	movement = -0.1
+		# }
+		# urban = {
+		# 	attack = -0.4
+		# 	defence = -0.1
+		# }
+		# river = { 
+		# 	attack = -0.2 
+		# 	movement = -0.2
+		# }
+		# amphibious = { 
+		# 	attack = -0.7
+		# }
 	}
 
 	##TD reg support
@@ -555,4 +555,5 @@ sub_units = {
 		armor_value = -0.33
 		
 	}
+
 }
