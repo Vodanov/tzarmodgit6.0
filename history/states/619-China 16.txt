@@ -3,7 +3,7 @@ state={
 	id=619
 	name="STATE_619" # Yarkand
 	manpower = 1430700
-	
+	impassable = yes	
 	state_category = pastoral
 	
 	resources={

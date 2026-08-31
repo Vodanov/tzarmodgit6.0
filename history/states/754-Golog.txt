@@ -1,4 +1,5 @@
 state = {
+	impassable = yes
 	id = 754
 	name = "STATE_754"
 	provinces = {

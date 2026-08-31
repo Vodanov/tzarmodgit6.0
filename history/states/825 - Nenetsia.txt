@@ -3,7 +3,7 @@ state = {
 	id = 825
 	name = "STATE_825" # Nenets
 	manpower = 21795
-	
+	impassable = yes
 	state_category = rural
 	
 	resources = {

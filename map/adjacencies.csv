@@ -158,6 +158,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4210;5009;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 4210;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 7400;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
+10863;7976;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
+10863;12898;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
+4996;12898;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
+4996;12789;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
+4318;12789;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 7909;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 7909;10776;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains

@@ -3,7 +3,7 @@ state = {
 	id = 880
 	name = "STATE_880" # Kotlas
 	manpower = 262721
-	
+	impassable = yes	
 	state_category = rural
 
 	history = {

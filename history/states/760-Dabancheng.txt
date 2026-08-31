@@ -1,5 +1,5 @@
 state = {
-
+	impassable = yes
 	id = 760
 	name = "STATE_760"
 	manpower = 700000

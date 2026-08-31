@@ -1,38 +1,32 @@
 state = {
 	id = 616
 	name = "STATE_616"
-
 	resources = {
 		coal = 2
 	}
-
+	impassable = yes
 	history = {
-
 		owner = CHI
-		
 		add_core_of = CHI
-
 		buildings = {
 			infrastructure = 1
-
 			8127 = {
 				landmark_great_wall_section = {
-				    level = 1
-				    allowed = {
-				        always = no
-				    }
+					level = 1
+					allowed = {
+						always = no
+					}
 				}
 			}
 		}
-
 		victory_points = {
-			8127 3 # Yinchuan
+			8127
+			3			# Yinchuan
 		}
-
 		victory_points = {
-			5031 1 # Alxa Right Banner
+			5031
+			1			# Alxa Right Banner
 		}
-
 		# 1936.1.1 = {
 		# 	IF = {
 		# 		limit = {
@@ -43,8 +37,6 @@ state = {
 		# 		remove_core_of = XSM
 		# 	}
 		# }
-
-
 		# 1938.10.25 = {
 		# 	if = {
 		# 		limit = {
@@ -54,19 +46,22 @@ state = {
 		# 		}
 		# 		CHI = {
 		# 			transfer_state = PREV
-
 		# 		}
 		# 	}
 		# }
-
 	}
-
 	provinces = {
-		3742 5031 7511 8055 8081 8127 10724 12750  
+		3742
+		5031
+		7511
+		8055
+		8081
+		8127
+		10724
+		12750
 	}
 	manpower = 1077600
-	buildings_max_level_factor = 1.000
+	buildings_max_level_factor = 1
 	state_category = pastoral
-
-	local_supplies = 0.0 
+	local_supplies = 0
 }
