@@ -130,7 +130,7 @@ NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience dr
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.17 -- how to weight in highest armor & pen vs the division average
-NDefines.NMilitary.PEN_VS_AVERAGE = 0.4
+NDefines.NMilitary.PEN_VS_AVERAGE = 0.25
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.50 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.70 -- damage reduction if armor outclassing enemy
 
