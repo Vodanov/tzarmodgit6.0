@@ -126,8 +126,8 @@ focus_tree = {
 				category = artillery
 			}
 			add_tech_bonus = {
-				bonus = 1.5
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = rocketry
 			}
 			random_owned_state = {
