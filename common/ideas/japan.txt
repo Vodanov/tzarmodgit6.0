@@ -793,6 +793,85 @@ ideas = {
 			}
 		}
 
+		JAP_occupation_of_china_idea = {
+			name = pillaging_of_china
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = -0.30 
+			}
+
+			
+
+		}
+		JAP_china_coastal_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+				navy_max_range_factor = 0.10
+				dockyard_output_factor = 0.10
+				experience_gain_navy = 0.05
+			}
+		}
+
+		JAP_china_military_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_build_speed = 0.10
+				conscription_factor = 0.02
+				experience_gain_army = 0.05
+			}
+		}
+
+		JAP_china_farmland_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
 		JAP_the_unthinkable_option = {
 			allowed = {
 				always = no
@@ -2212,5 +2291,9 @@ ideas = {
 			
 		# 	traits = { rocket_scientist }
 		# }
-	}	
+
+		
+		
+		
+	} 	
 }
