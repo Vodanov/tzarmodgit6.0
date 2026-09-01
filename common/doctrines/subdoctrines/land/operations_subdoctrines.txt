@@ -143,7 +143,7 @@ infiltration_tactics = {
         }
         nightly_assaults = {
         #2
-            land_night_attack = 0.15
+            land_night_attack = 0.25
         }
         self_sustaining_infiltration_units = {
         #3
@@ -200,7 +200,7 @@ infiltration_tactics = {
         infiltration_in_depth = {
         #5
             land_reinforce_rate = 0.02
-            org_loss_when_moving = -0.20
+            org_loss_when_moving = -0.15
             
         }
     }
@@ -318,7 +318,7 @@ deep_battle = {
     category_tanks = {
         max_organisation = 4
     }
-
+	
 
     ai_will_do = { }
 
@@ -353,6 +353,7 @@ deep_battle = {
         }
         operational_concentration = {
         #2
+			supply_consumption_factor = -0.15
             category_tanks = {
                 max_organisation = 4
             }
@@ -374,13 +375,13 @@ deep_battle = {
             org_loss_when_moving = -0.2
             category_vehicle_infantry = {
                 max_organisation = 10
-                default_morale = 0.1
+                default_morale = 0.2
             }
             category_tanks = {
                 max_organisation = 2
             }
             category_all_armor = {
-                default_morale = 0.1
+                default_morale = 0.2
             }
             armored_car = {
                 max_organisation = 4

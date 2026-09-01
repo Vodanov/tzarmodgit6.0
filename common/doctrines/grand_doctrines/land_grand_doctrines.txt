@@ -394,13 +394,13 @@ mass_assault = {
     no_supply_grace = 256
 	supply_consumption_factor = -0.10
     out_of_supply_factor = -0.35
-	category_armor = {
+	category_tanks = {
 	    max_strength = 5
         default_morale = 0.1
     }
-	category_infantry = {
-		max_strength = 3
-		default_morale = 0.1
+	infantry = {
+		max_strength = 5
+		default_morale = 0.2
 	}
     enable_tactic = tactic_relentless_assault
 	enable_tactic = tactic_guerrilla_tactics
