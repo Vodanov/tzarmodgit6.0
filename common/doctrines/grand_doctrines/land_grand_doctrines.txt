@@ -31,6 +31,7 @@ new_mobile_warfare = {
 	additional_brigade_column_size = 1
 	planning_speed = 0.20
 	army_speed_factor = 0.10
+	cas_damage_reduction = 0.0125
 
 	category_tanks = {
       breakthrough = 0.20  
@@ -42,6 +43,7 @@ new_mobile_warfare = {
 	        org_loss_when_moving = -0.15
             land_reinforce_rate = 0.02
             enable_tactic = tactic_delay
+			default_morale = 0.03
 
             effect = {
                 if = {
@@ -61,6 +63,7 @@ new_mobile_warfare = {
             #Artillery/Support
 	        planning_speed = 0.1
             org_loss_at_low_org_factor = -0.1
+			default_morale = 0.03
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -78,7 +81,8 @@ new_mobile_warfare = {
         }
         {
             #Armor
-
+			
+			default_morale = 0.1
             enable_tactic = tactic_blitz
 
             effect = {
@@ -98,6 +102,7 @@ new_mobile_warfare = {
         {
             #Operations
 	        planning_speed = 0.2
+			default_morale = 0.03
             enable_tactic = tactic_backhand_blow   
 
             effect = {
@@ -149,7 +154,8 @@ superior_firepower = {
     enable_tactic = tactic_overwhelming_fire
 	additional_brigade_column_size = 1
     category_army = {
-    soft_attack = 0.1
+    soft_attack = 0.075
+	
     }
     category_support_artillery = {
         soft_attack = 0.1
@@ -203,7 +209,7 @@ superior_firepower = {
             #Armor
             enable_tactic = tactic_delay
             category_army = {
-                default_morale = 0.1
+                hard_attack = 0.05
             }
 
             effect = {
@@ -224,7 +230,7 @@ superior_firepower = {
             #Operations
             enable_tactic = tactic_tactical_withdrawal
             category_army = {
-                default_morale = 0.05
+                hard_attack = 0.05
             }
             planning_decay_rate_factor = -0.1
 
@@ -275,6 +281,9 @@ grand_battleplan = {
     additional_brigade_column_size = 1
     max_planning = 0.125
     planning_speed = 0.10
+	category_infantry = {
+	breakthrough = 0.1
+	}
 
     milestones = {
         {
@@ -385,10 +394,13 @@ mass_assault = {
     no_supply_grace = 256
 	supply_consumption_factor = -0.10
     out_of_supply_factor = -0.35
-	category_army = {
+	category_armor = {
 	    max_strength = 5
         default_morale = 0.1
     }
+	category_infantry = {
+		max_strength = 3
+		default_morale = 0.1
     enable_tactic = tactic_relentless_assault
 	enable_tactic = tactic_guerrilla_tactics
 
