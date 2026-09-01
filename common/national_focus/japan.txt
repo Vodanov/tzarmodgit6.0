@@ -271,6 +271,7 @@ focus_tree = {
 			surrender_progress > 0.78
 			}
 			date > 1940.01.01
+			NOT = { country_exists = CHI }
 		}
 		}
 
@@ -344,7 +345,7 @@ focus_tree = {
 		}
 
 		available = {
-		owns_state = 608
+		has_completed_focus = JAP_secure_china
 		}
 
 		bypass = {
@@ -663,7 +664,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = JAP_occupation_of_china_idea
 			navy_experience = 100
-			add_ideas = JAP_china_coastal
+			add_ideas = JAP_china_coastal_idea
 			613 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {

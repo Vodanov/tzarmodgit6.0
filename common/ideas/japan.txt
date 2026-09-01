@@ -794,7 +794,7 @@ ideas = {
 		}
 
 		JAP_occupation_of_china_idea = {
-			name = pillaging_of_china
+			
 			allowed = {
 				always = no
 			}
@@ -807,6 +807,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = -0.30 
+				production_speed_buildings_factor = 0.2
 			}
 
 			
@@ -827,8 +828,7 @@ ideas = {
 			
 			modifier = {
 				navy_max_range_factor = 0.10
-				dockyard_output_factor = 0.10
-				experience_gain_navy = 0.05
+				industrial_capacity_dockyard = 0.20
 			}
 		}
 

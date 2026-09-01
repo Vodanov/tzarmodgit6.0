@@ -155,25 +155,26 @@ division_template = {
 	division_names_group = JAP_IMB_01
 	is_locked = yes										# 1 engineering battalion
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-		heavy_armor = { x= 2 y = 0 }
-		heavy_armor = { x= 2 y = 1 }
-		heavy_armor = { x= 2 y = 2 }
-		heavy_armor = { x= 2 y = 3 }
-		heavy_armor = { x= 2 y = 4 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		heavy_armor = { x = 0 y = 4 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }
+		heavy_armor = { x = 1 y = 4 }
+		motorized = { x= 2 y = 0 }
+		motorized = { x= 2 y = 1 }
+		motorized = { x= 2 y = 2 }
+		motorized = { x= 2 y = 3 }
+		motorized = { x= 2 y = 4 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
