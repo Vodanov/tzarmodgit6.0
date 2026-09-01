@@ -31,7 +31,7 @@ new_mobile_warfare = {
 	additional_brigade_column_size = 1
 	planning_speed = 0.20
 	army_speed_factor = 0.10
-	cas_damage_reduction = 0.0125
+	cas_damage_reduction = 0.125
 
 	category_tanks = {
       breakthrough = 0.20  
@@ -154,7 +154,7 @@ superior_firepower = {
     enable_tactic = tactic_overwhelming_fire
 	additional_brigade_column_size = 1
     category_army = {
-    soft_attack = 0.075
+    soft_attack = 0.1
 	
     }
     category_support_artillery = {
@@ -209,7 +209,7 @@ superior_firepower = {
             #Armor
             enable_tactic = tactic_delay
             category_army = {
-                hard_attack = 0.05
+                hard_attack = 0.025
             }
 
             effect = {
@@ -230,7 +230,7 @@ superior_firepower = {
             #Operations
             enable_tactic = tactic_tactical_withdrawal
             category_army = {
-                hard_attack = 0.05
+                hard_attack = 0.025
             }
             planning_decay_rate_factor = -0.1
 
@@ -282,7 +282,7 @@ grand_battleplan = {
     max_planning = 0.125
     planning_speed = 0.10
 	category_infantry = {
-	breakthrough = 0.1
+		breakthrough = 0.1
 	}
 
     milestones = {
@@ -401,6 +401,7 @@ mass_assault = {
 	category_infantry = {
 		max_strength = 3
 		default_morale = 0.1
+	}
     enable_tactic = tactic_relentless_assault
 	enable_tactic = tactic_guerrilla_tactics
 
