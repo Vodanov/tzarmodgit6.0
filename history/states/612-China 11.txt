@@ -11,8 +11,9 @@ state = {
 
 	history = {
 
-		owner = JAP
-		# add_core_of = MAN
+		owner = MIN
+		
+	    add_core_of = MIN
 		
 		add_core_of = CHI
 

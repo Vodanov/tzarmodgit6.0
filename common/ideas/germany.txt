@@ -568,6 +568,34 @@ ideas = {
 			trade_cost_for_target_factor = -0.8
 		}
 	}
+
+	trade_jap = {
+		name = "Integrated Economies"
+		available = {
+		}
+		
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_exploit_mines
+
+		targeted_modifier = {
+			tag = MIN
+			trade_cost_for_target_factor = -0.8
+		}
+		targeted_modifier = {
+		tag = JAP
+		trade_cost_for_target_factor = -0.6
+		}
+	}
 	
 	GER_redirecting_naval_production = {
 			allowed = {

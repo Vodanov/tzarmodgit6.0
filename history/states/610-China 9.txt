@@ -2,7 +2,6 @@ state = {
 	id = 610
 	name = "STATE_610" # Jehol
 	manpower = 1975377
-	impassable = yes
 	state_category = pastoral
 
 	resources = {
@@ -12,9 +11,9 @@ state = {
 
 	history = {
 
-		owner = JAP
+		owner = MIN
 		
-		# add_core_of = MAN
+		add_core_of = MIN
 		add_core_of = CHI
 
 		victory_points = {
