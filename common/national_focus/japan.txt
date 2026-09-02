@@ -323,7 +323,6 @@ focus_tree = {
 			army_experience = 250
 			air_experience = 800
 			navy_experience = 1000
-			tzar_china_mg_init = yes
 		}
 	}
 	focus = {
