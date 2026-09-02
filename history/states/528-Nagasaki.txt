@@ -3,7 +3,7 @@ state = {
 	name = "STATE_528" # North Kyushu
 	manpower = 6046000 # was 9069000
 
-	state_category = city # was large_city
+	state_category = metropolis # was large_city
 
 	resources = {
 		chromium = 32 # was: 88, then 52

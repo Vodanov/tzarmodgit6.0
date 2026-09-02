@@ -323,6 +323,7 @@ focus_tree = {
 			army_experience = 250
 			air_experience = 800
 			navy_experience = 1000
+			tzar_china_mg_init = yes
 		}
 	}
 	focus = {
@@ -1998,21 +1999,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_war_support < 0.8
-				}
-				add_war_support = 0.1
-			}
-			else_if = {
-				limit = {
-					has_idea = tot_economic_mobilisation
-				}
-				add_political_power = 150
-			}
-			else = {
 				add_ideas = tot_economic_mobilisation
-			}
 			if = { limit = { country_exists = MIN } MIN = { add_ideas = tot_economic_mobilisation } }
 			if = { limit = { country_exists = SIA } SIA = { add_ideas = tot_economic_mobilisation } }
 		}
