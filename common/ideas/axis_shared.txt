@@ -1,0 +1,209 @@
+ideas = {
+	country = {
+		AXIS_economic_union = {
+			picture = generic_economic_increase
+			name = sffmf_economic_union
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		AXIS_naval_airforce_leader_1 = {
+			name = sffmf_naval_airforce_idea
+			picture = generic_navy_carrier_bonus
+
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.15
+					air_range = 0.25
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.15
+					air_range = 0.25
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					air_agility = 0.15
+					air_range = 0.25					
+				}
+				cv_small_plane_cas_airframe = {
+					instant = yes
+					naval_strike_attack = 0.15
+					air_range = 0.25			
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.15
+					air_range = 0.25				
+				}
+				cv_small_plane_suicide_airframe = {
+					instant = yes
+					naval_strike_attack = 0.15
+					air_range = 0.25				
+				}
+			}
+		}
+		AXIS_naval_airforce_leader_2 = {
+			picture = generic_aircraft_support
+			name = sffmf_increased_aircraft_production_idea
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.075
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.075
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.075
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		AXIS_naval_airforce_member_1 = {
+			picture = generic_navy_carrier_bonus
+			name = sffmf_naval_airforce_idea
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.1
+					air_range = 0.15
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.1
+					air_range = 0.15
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					air_agility = 0.1
+					air_range = 0.15					
+				}
+				cv_small_plane_cas_airframe = {
+					instant = yes
+					naval_strike_attack = 0.1
+					air_range = 0.15			
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					naval_strike_attack = 0.1
+					air_range = 0.15				
+				}
+				cv_small_plane_suicide_airframe = {
+					instant = yes
+					naval_strike_attack = 0.1
+					air_range = 0.15				
+				}
+			}
+		}
+		AXIS_naval_airforce_member_2 = {
+			picture = generic_aircraft_support
+			name = sffmf_increased_aircraft_production_idea
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		AXIS_joint_mountaineers_effort = {
+			name = sffmf_joint_mountaineers_effort
+			picture = generic_mountain_warfare
+	
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+	
+			modifier = {
+				mountaineers_special_forces_contribution_factor = -0.25
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.15
+				modifier_army_sub_unit_mountaineers_speed_factor = 0.05
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+			} 
+		}
+	
+		AXIS_joint_amphibious_effort = {
+			name = sffmf_joint_amphibious_effort
+			picture = escort_effort_focus
+	
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+	
+			modifier = {
+				marines_special_forces_contribution_factor = -0.25
+				modifier_army_sub_unit_marine_attack_factor = 0.1
+				naval_invasion_division_cap = 4
+				naval_invasion_prep_days = -5
+			} 
+		}
+	
+		AXIS_joint_submarines_effort = {
+			name = sffmf_joint_submarines_effort			
+			picture = generic_coastal_navy
+	
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+	
+			modifier = {
+				navy_submarine_attack_factor = 0.15
+				navy_submarine_defence_factor = 0.1
+			} 
+		}
+	
+		AXIS_joint_carrier_effort = {
+			name = sffmf_joint_carrier_effort	
+			picture = generic_sea_focused_navy
+	
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+	
+			modifier = {
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.1
+			} 
+		}
+	}
+}
