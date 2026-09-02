@@ -401,3 +401,62 @@ tank_destroyer_force = {
         }
 
     } }
+
+light_tank_dominance = {
+     track = armor
+    name = light_tank_dominance
+    description = light_tank_dominance
+    icon = GFX_doctrine_mobile_recon_assault_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    visible = {
+  
+    }
+
+    ai_will_do = {
+
+        base = 0
+
+    }  
+
+    category_all_armor = {
+        max_strength = 5
+    }
+
+    rewards = {
+
+        tactical_reconnaissance = {
+            category_recon = {
+                recon = 1
+            }
+        }
+        committed_operational_units = {
+                category_all_infantry  = {
+                    maximum_speed = 0.1
+                }
+            }
+        redeployment_priority = {
+             light_armor   = {
+                supply_consumption = -0.05
+                default_morale = 0.1
+            }
+        }
+
+        independent_counterattacks = {
+             light_armor   = {
+                max_organisation = 5
+            }
+        }
+
+        selfsufficient_battalion = {
+                light_armor   = {
+                    soft_attack = 0.25
+					breakthrough = 0.2
+
+                }
+    
+        }
+
+    } }
