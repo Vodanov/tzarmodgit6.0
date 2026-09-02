@@ -513,10 +513,11 @@ great_war_infantry = {
      # EFFECTS
     #OTHER BASE REWARDS
     category_cavalry = {
-        supply_consumption = -0.02
+        supply_consumption = -0.1
+		maximum_speed = 0.5
     }
     category_light_infantry = {
-        defense = 0.1
+        defense = 0.05
     }
     production_speed_bunker_factor = 0.25
 
@@ -533,7 +534,7 @@ great_war_infantry = {
         }
         sapping_operations = {
             category_light_infantry = {
-                defense = 0.1
+                defense = 0.05
             }
             field_hospital = {
                 casualty_trickleback = 0.1
@@ -552,8 +553,7 @@ great_war_infantry = {
         field_fortification_emphasis = {
             category_light_infantry = {
                 reliability = 0.05
-                defense = 0.05
-                max_organisation = 5
+                max_organisation = 0.1
             }
         }
         redoubt_networks = {
