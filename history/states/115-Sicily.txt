@@ -45,9 +45,6 @@ state={
 		
 
 	}
-	resources = {
-		tungsten = 120
-	}
 	manpower=3836571
 	buildings_max_level_factor=1
 	state_category=city

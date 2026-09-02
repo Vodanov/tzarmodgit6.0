@@ -9,6 +9,7 @@ state = {
 		steel = 15 # was: 8
 		aluminium = 1 # was: 1
 		coal = 1 #initial distribution /5 total
+		tungsten = 120
 	}
 
 	history = {

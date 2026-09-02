@@ -137,7 +137,9 @@ add_ideas = {
 	george_v
 	# ENG_bren_carrier_mech_idea
 	# ENG_guns_expensive_idea
+	COOM_volunteers_majors
 }
+add_timed_idea = { idea = france_production_regrowth days = 30 }
 	
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
