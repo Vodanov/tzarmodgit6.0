@@ -255,9 +255,9 @@ mobile_recon_and_assault = {
     rewards = {
 
         motorization_support = {
-            category_mobile_and_mobile_combat_sup = {
-                maximum_speed = 0.1
-                default_morale = 0.1
+            light_flame_tank = {
+                breakthrough = 0.5
+                default_morale = 0.2
             }
 
         }
