@@ -35,7 +35,7 @@ ideas = {
 				cv_small_plane_airframe = {
 					instant = yes
 					air_agility = 0.15
-					air_range = 0.25					
+					air_range = 0.1					
 				}
 				cv_small_plane_cas_airframe = {
 					instant = yes
@@ -90,33 +90,33 @@ ideas = {
 			equipment_bonus = {
 				small_plane_naval_bomber_airframe = {
 					instant = yes
-					naval_strike_attack = 0.1
-					air_range = 0.15
+					naval_strike_attack = 0.15
+					air_range = 0.25
 				}
 				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
-					naval_strike_attack = 0.1
-					air_range = 0.15
+					naval_strike_attack = 0.15
+					air_range = 0.25
 				}
 				cv_small_plane_airframe = {
 					instant = yes
-					air_agility = 0.1
-					air_range = 0.15					
+					air_agility = 0.15
+					air_range = 0.1					
 				}
 				cv_small_plane_cas_airframe = {
 					instant = yes
-					naval_strike_attack = 0.1
-					air_range = 0.15			
+					naval_strike_attack = 0.15
+					air_range = 0.25			
 				}
 				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
-					naval_strike_attack = 0.1
-					air_range = 0.15				
+					naval_strike_attack = 0.15
+					air_range = 0.25				
 				}
 				cv_small_plane_suicide_airframe = {
 					instant = yes
-					naval_strike_attack = 0.1
-					air_range = 0.15				
+					naval_strike_attack = 0.15
+					air_range = 0.25				
 				}
 			}
 		}
@@ -156,7 +156,7 @@ ideas = {
 	
 			modifier = {
 				mountaineers_special_forces_contribution_factor = -0.25
-				modifier_army_sub_unit_mountaineers_defence_factor = 0.15
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.10
 				modifier_army_sub_unit_mountaineers_speed_factor = 0.05
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
 			} 

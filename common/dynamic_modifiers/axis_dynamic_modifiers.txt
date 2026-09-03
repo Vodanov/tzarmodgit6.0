@@ -41,8 +41,8 @@ AXIS_axis_joint_high_command = {
 
 	remove_trigger = { NOT = { is_in_faction_with = GER } }
 
-	army_speed_factor = 0.1
-	army_org_regain = 0.15
+	army_speed_factor = 0.05
+	army_org_regain = 0.05
 	max_command_power_mult = 0.1
 	command_power_gain = AXIS_command_power_gain_variable
 	max_command_power = AXIS_max_command_power_variable

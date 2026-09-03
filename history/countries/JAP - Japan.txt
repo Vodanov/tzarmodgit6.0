@@ -121,7 +121,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = heavy_tank_chassis_0
-	amount = 300
+	amount = 800
 	producer = JAP
 }
 
@@ -1028,7 +1028,8 @@ if = {
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_small_cannon
 			special_type_slot_3 = secondary_turret_small_cannon
-			special_type_slot_4 = empty
+			special_type_slot_4 = wet_ammo_storage
+			special_type_slot_10 = wet_ammo_storage
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 8

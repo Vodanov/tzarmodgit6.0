@@ -93,7 +93,7 @@ joint_focus = {
 		}
 
 		available = {
-			
+			original_tag = GERwel
 		}
 		
 		bypass = {
