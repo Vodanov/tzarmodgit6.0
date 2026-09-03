@@ -21,7 +21,7 @@ state = {
 		}
 
 		victory_points = {
-			11972 1 # Yibin
+			11972 2 # Yibin
 		}
 
 		

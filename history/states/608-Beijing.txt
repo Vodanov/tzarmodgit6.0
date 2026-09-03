@@ -41,7 +41,7 @@ state={
 		}
 
 		victory_points = {
-			12026 1 # Baoding
+			12026 2 # Baoding
 		}
 
 		1938.10.25 = {

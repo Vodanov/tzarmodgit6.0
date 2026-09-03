@@ -14,11 +14,11 @@ state = {
 		}
 
 		victory_points = {
-			4130 1 # Mienyang 
+			1612 2 # jingzhou 
 		}
 
 		victory_points = {
-			1612 1 # Yichang 
+			7596 2 # Yichang 
 		}
 
 		1938.10.25 = {

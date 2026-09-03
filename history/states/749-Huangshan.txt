@@ -15,7 +15,7 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			12019 1
+			12019 2
 		}
 		
 		1938.10.25 = {

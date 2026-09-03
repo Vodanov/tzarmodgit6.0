@@ -20,10 +20,6 @@ state = {
 			4619 10 # Wuhan
 		}
 
-		victory_points = {
-			12467 1 # Hankow
-		}
-
 		1938.10.25 = {
 			buildings = {
 				industrial_complex = 2

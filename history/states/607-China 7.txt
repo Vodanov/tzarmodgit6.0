@@ -22,11 +22,15 @@ state={
 		}
 
 		victory_points = {
-			7656 1 # Kaifeng 
+			7656 2 # Kaifeng 
 		}
 
 		victory_points = {
-			11931 1 # Luoyang 
+			11931 2 # Luoyang 
+		}
+
+		victory_points = {
+			10434 2 #xinyang
 		}
 
 		1938.10.25 = {		

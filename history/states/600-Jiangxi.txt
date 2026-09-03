@@ -17,7 +17,7 @@ state={
 		}
 
 		victory_points = {
-			7199 1 # Ganzhou 
+			7199 2 # Ganzhou 
 		}
 
 		1938.10.25 = {

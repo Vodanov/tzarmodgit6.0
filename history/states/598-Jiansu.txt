@@ -12,15 +12,15 @@ state={
 		add_core_of = CHI
 
 		victory_points = {
-			1029 2 # Donghai
+			1029 5 # Donghai
 		}
 
 		victory_points = {
-			7025 1 # Xuzhou
+			7025 2 # Xuzhou
 		}
 
 		victory_points = {
-			4001 1 # Yangzhou
+			4001 2 # Yangzhou
 		}
 
 		buildings = {
