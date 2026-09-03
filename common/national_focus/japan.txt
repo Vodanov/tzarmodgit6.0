@@ -1482,10 +1482,10 @@ focus_tree = {
 
 		completion_reward = {
 			532 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 12
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -1898,7 +1898,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1918,25 +1918,20 @@ focus_tree = {
 
 
 		completion_reward = {
-			if = {
-				limit = {	
-					has_war_support < 0.5
+			every_state = { 
+			limit = { is_core_of = JAP }
+			add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
 				}
-				add_war_support = 0.1
+			
 			}
-			else_if = {
-				limit = {
-					has_idea = war_economy
-				}
-				add_political_power = 150
-			}
-			else = {
-				add_ideas = war_economy
-			}
-			if = { limit = { country_exists = MIN } MIN = { add_ideas = war_economy } }
-			if = { limit = { country_exists = SIA } SIA = { add_ideas = war_economy } }
+
 		}
-	}
+
 
 	focus = {
 		id = JAP_national_research_policy

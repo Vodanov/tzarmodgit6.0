@@ -40,7 +40,7 @@ ideas = {
 				# army_leader_start_level = 2
 				# army_intel_to_others = -5.0
 				# custom_modifier_tooltip = best_of_the_best_spirit_tt
-				training_time_factor = -0.25
+				experience_gain_army_unit_factor = 0.3
 				custom_modifier_tooltip = "Your units gain experience faster (Gain Veterancy more quickly)"
 			}
 			cost = 30.0
