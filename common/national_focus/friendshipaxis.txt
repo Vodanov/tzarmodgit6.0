@@ -1217,45 +1217,7 @@ joint_focus = {
 	}
 }
 
-joint_focus = {
-	id = AXIS_equipment_conversion_focus
-	
-	icon = GFX_focus_generic_license_production
-	
-	prerequisite = { focus = AXIS_military_industry_hub focus = AXIS_ad_hoc_military_industry }
-	mutually_exclusive = { focus = AXIS_jet_engines focus = AXIS_machine_tools_research }
-	x = 1
-	y = 1
-	relative_position_id = AXIS_ad_hoc_military_industry
-	cost = 5
 
-	text_icon = NORDIC_focus_style
-
-	joint_trigger = { is_in_faction_with = GER }
-
-	available = {
-		num_of_military_factories > 35
-	}
-	completion_reward_joint_originator = {
-		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
-		add_to_variable = {
-			AXIS_equipment_conversion_speed_variable = 0.15
-			tooltip = equipment_conversion_speed_tt
-		}
-	}
-
-	completion_reward_joint_member = {
-		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
-		add_to_variable = {
-			AXIS_equipment_conversion_speed_variable = 0.1
-			tooltip = equipment_conversion_speed_tt
-		}
-	}
-	
-	ai_will_do = {
-		base = 6
-	}
-}
 
 joint_focus = {
 	id = AXIS_machine_tools_research
@@ -1263,7 +1225,7 @@ joint_focus = {
 	icon = GFX_focus_generic_modernize_industry
 	
 	prerequisite = { focus = AXIS_military_industry_hub focus = AXIS_ad_hoc_military_industry }
-	mutually_exclusive = { focus = AXIS_jet_engines focus = AXIS_equipment_conversion_focus }
+	mutually_exclusive = { focus = AXIS_jet_engines  }
 
 	x = 1
 	y = 1

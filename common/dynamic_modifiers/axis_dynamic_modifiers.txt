@@ -34,7 +34,6 @@ AXIS_arms_industry = {
 	production_factory_max_efficiency_factor = AXIS_production_factory_max_efficiency_factor_variable
 	production_factory_efficiency_gain_factor = AXIS_production_factory_efficiency_gain_factor_variable_2
 	production_speed_arms_factory_factor = AXIS_production_speed_arms_factory_factor_variable
-	equipment_conversion_speed = AXIS_equipment_conversion_speed_variable
 }
 
 AXIS_axis_joint_high_command = {
