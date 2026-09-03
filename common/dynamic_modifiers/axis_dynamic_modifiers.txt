@@ -1,0 +1,58 @@
+AXIS_axis_leader = {
+	icon = GFX_idea_ast_abandon_the_westminster_system_fascism
+
+    remove_trigger = { NOT = { is_in_faction_with = GER } }
+
+	political_power_gain = 0.25
+	fascism_drift = 0.1
+	research_speed_factor = AXIS_research_speed_factor_variable
+	training_time_factor = AXIS_training_time_factor_variable
+	consumer_goods_factor = AXIS_consumer_goods_factor_variable
+	production_factory_efficiency_gain_factor = AXIS_production_factory_efficiency_gain_factor_variable
+	war_support_factor = AXIS_war_support_factor_variable
+}
+
+AXIS_axis_member = {
+	icon = GFX_idea_generic_fascism_rising
+	
+	remove_trigger = { NOT = { is_in_faction_with = GER } }
+
+	political_power_gain = 0.1
+	fascism_drift = 0.05
+	research_speed_factor = AXIS_research_speed_factor_variable
+	training_time_factor = AXIS_training_time_factor_variable
+	consumer_goods_factor = AXIS_consumer_goods_factor_variable
+	production_factory_efficiency_gain_factor = AXIS_production_factory_efficiency_gain_factor_variable
+	war_support_factor = AXIS_war_support_factor_variable
+}
+
+AXIS_arms_industry = {
+	icon = GFX_idea_generic_improved_industries
+
+	remove_trigger = { NOT = { is_in_faction_with = GER } }
+
+	production_factory_max_efficiency_factor = AXIS_production_factory_max_efficiency_factor_variable
+	production_factory_efficiency_gain_factor = AXIS_production_factory_efficiency_gain_factor_variable_2
+	production_speed_arms_factory_factor = AXIS_production_speed_arms_factory_factor_variable
+}
+
+AXIS_axis_joint_high_command = {
+	icon = GFX_idea_ETH_conservative_high_command
+
+	remove_trigger = { NOT = { is_in_faction_with = GER } }
+
+	army_speed_factor = 0.1
+	army_org_regain = 0.15
+	max_command_power_mult = 0.1
+	command_power_gain = AXIS_command_power_gain_variable
+	max_command_power = AXIS_max_command_power_variable
+	weekly_manpower = AXIS_weekly_manpower_variable
+	experience_gain_army = AXIS_experience_gain_army_variable
+	experience_gain_navy = AXIS_experience_gain_navy_variable
+	experience_gain_air = AXIS_experience_gain_air_variable
+	naval_doctrine_cost_factor = AXIS_naval_doctrine_cost_factor_variable
+	air_cas_present_factor = AXIS_air_cas_present_factor_variable
+	air_strategic_bomber_bombing_factor = AXIS_air_strategic_bomber_bombing_factorvariable
+	air_intercept_efficiency = AXIS_air_intercept_efficiency_variable
+	air_superiority_efficiency = AXIS_air_superiority_efficiency_variable
+}

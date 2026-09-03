@@ -44,11 +44,11 @@ state = {
 		}
 
 		victory_points = {
-			11822 2 # Tongzhou
+			3900 2 # qinhuangdao
 		}
 
 		victory_points = {
-			1052 1 # Tangshan
+			900 2 # Tangshan
 		}
 
 	}

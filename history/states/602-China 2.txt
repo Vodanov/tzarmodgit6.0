@@ -31,7 +31,7 @@ state={
 		}
 
 		victory_points = {
-			12350 1 # Hengyang 
+			7159 2 # Hengyang 
 		}
 
 	}

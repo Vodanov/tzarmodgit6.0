@@ -1840,7 +1840,6 @@ ideas = {
 				supply_consumption_factor = -0.1
 				equipment_capture = 0.03
 				equipment_capture_factor = 0.25
-				equipment_conversion_speed = 0.25
 				refit_speed = 0.15
 			}
 		}

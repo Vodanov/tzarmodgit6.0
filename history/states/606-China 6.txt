@@ -17,11 +17,11 @@ state={
 		}
 
 		victory_points = {
-			7222 1 # Hefei 
+			7222 2 # Hefei 
 		}
 
 		victory_points = {
-			1083 1 # Anqing 
+			1083 2 # Anqing 
 		}
 
 		#victory_points = {

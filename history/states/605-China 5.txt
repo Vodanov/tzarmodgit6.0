@@ -12,7 +12,7 @@ state = {
 		add_core_of = CHI
 
 		victory_points = {
-			11865 1 # Wanxian
+			11865 2 # dazhou
 		}
 
 		buildings = {

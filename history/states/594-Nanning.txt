@@ -26,7 +26,7 @@ state = {
 		}
 
 		victory_points = { 
-			10459 1 # Bose
+			10459 2 # Bose
 		}
 
 		# 1938.10.25 = {

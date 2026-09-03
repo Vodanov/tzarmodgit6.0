@@ -35,7 +35,7 @@ state = {
 		# }
 
 		victory_points = {
-			7301 1 # Xian
+			7301 3 # Xian
 		}
 
 		buildings = {
