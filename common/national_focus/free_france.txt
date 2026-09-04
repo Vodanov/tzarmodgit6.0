@@ -24,6 +24,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+
+			every_state = { 
+				limit = { is_owned_by = FRF }
+				set_compliance = 100
+			}
 			remove_ideas = neutrality_idea3
 			army_experience = 800
 			set_technology = {
@@ -210,7 +215,7 @@ focus_tree = {
 				uses = 2
 				category = tp_tech
 			}
-			539 = {
+			310 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -231,7 +236,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			539 = {
+			310 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -252,7 +257,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			539 = {
+			310 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -453,6 +458,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 50
+
+			add_mastery = {
+			amount = 250
+			folder = land
+		}
 			# add_tech_bonus = {
 			# 	name = FRF_army_reform
 			# 	bonus = 1.0

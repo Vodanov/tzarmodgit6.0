@@ -1437,6 +1437,7 @@
 				value = -0.2
 			}}
 			add_stability = 0.025
+			add_ideas = {FRA_womens_suffrage}
 			custom_effect_tooltip = FRA_women
 			
 		}

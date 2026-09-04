@@ -12,6 +12,7 @@ ALLIED_assgun_organization = {
 			original_tag = NZL
 			original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -31,6 +32,8 @@ ALLIED_heavy_tank_organization = {
 			# original_tag = NZL
 			original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
+
 		}
 	}
 
@@ -80,6 +83,7 @@ ALLIED_medium_tank_organization = {
 			original_tag = NZL
 			# original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 	
@@ -104,6 +108,7 @@ ALLIED_generic_tank_organization = {
 			original_tag = NZL
 			original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -126,6 +131,7 @@ ALLIED_support_equipment_organization = {
 			# original_tag = NZL
 			original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -144,6 +150,7 @@ ALLIED_tank_destoryer_organization = {
 			original_tag = NZL
 			original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -170,6 +177,7 @@ ALLIED_artillery_organization = {
 			original_tag = NZL
 			# original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -187,6 +195,7 @@ ALLIED_motorized_mechanized_organization = {
 			# original_tag = NZL
 			# original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 
@@ -212,6 +221,7 @@ ALLIED_infantry_equipment_organization = {
 			original_tag = NZL
 			# original_tag = RAJ
 			original_tag = FRF
+			original_tag = FRA
 		}
 	}
 

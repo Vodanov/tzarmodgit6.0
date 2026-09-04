@@ -346,7 +346,7 @@ joint_focus = {
 		}
 
 		completion_reward = {
-			
+			add_to_faction = "FRF"
 		}
 
 		completion_reward_joint_originator = {
