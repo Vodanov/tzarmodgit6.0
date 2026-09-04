@@ -63,8 +63,8 @@ on_startup = {
 				tech_trucks = 1 popup = NO
 			}
 			add_daily_mastery = {
-				amount = 0.25
-				days = 1095
+				amount = 0.2
+				days = 3000
 				name = POOP_mastery_boost
 			}
 		}
