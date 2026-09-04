@@ -48,4 +48,6 @@ sub_unit_categories = {
 	category_tank_destroyer_regimental_support
 	category_self_propelled_anti_air_regimental_support
 	category_regimental_support_artillery
+	category_shocktroops
+	
 }

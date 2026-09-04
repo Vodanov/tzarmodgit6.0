@@ -477,6 +477,93 @@ technologies = {
 		}
 	}
 
+	shocktroops = {
+		special_project_specialization = { specialization_land }
+		enable_subunits = {
+			shocktroop
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_shocktroop"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = shocktroops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shocktroops2 = {
+		special_project_specialization = { specialization_land }
+		shocktroop = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		
+		
+		path = {
+			leads_to_tech = shocktroops3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 0.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shocktroops3 = {
+		special_project_specialization = { specialization_land }
+		shocktroop = {
+			max_organisation = 5
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	paratroopers = {
 
 		enable_subunits = {
@@ -493,10 +580,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1936
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1936 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1936 }
+		# }
 
 		on_research_complete_limit = {
 			NOT = {
@@ -572,10 +659,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1939 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1939 }
+		# }
 
 		categories = {
 			para_tech
@@ -616,10 +703,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1943
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1943 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1943 }
+		# }
 
 		categories = {
 			para_tech

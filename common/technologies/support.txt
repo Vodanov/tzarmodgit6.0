@@ -185,19 +185,6 @@ technologies = {
 				PROJECT = sp_land_military_engineering_vehicles
 			}
 
-			if = {
-				limit = {
-					original_tag = AFG
-					has_dlc = "Graveyard of Empires"
-					has_completed_focus = AFG_expand_quami_template
-				}
-				add_units_to_division_template = {
-					template_name = "Pashtun Levy" 
-					support = {
-						engineer = 0 
-					}
-				}
-			}
 		}
 	}
 
@@ -230,11 +217,11 @@ technologies = {
 			#flamethrower #MM: Moved to Special Project sp_land_flamethrower_tank
 		}
 
-		#enable_subunits = { #MM: Moved to Special Project sp_land_flamethrower_tank
-		#	light_flame_tank
-		#	medium_flame_tank
-		#	heavy_flame_tank
-		#}
+		# enable_subunits = { 
+		# 	light_flame_tank
+		# 	medium_flame_tank
+		# 	heavy_flame_tank
+		# }
 
 		path = {
 			leads_to_tech = tech_engineers3

@@ -11,7 +11,7 @@ technologies = {
 			always = no
 		}
 	}
-
+	### cannot be researched
 	battle_of_north_africa_tech = {
 		# mechanized = {
 		# 	max_strength = 7.0
