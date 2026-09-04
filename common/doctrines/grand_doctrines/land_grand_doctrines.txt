@@ -281,7 +281,7 @@ grand_battleplan = {
     additional_brigade_column_size = 1
     max_planning = 0.125
     planning_speed = 0.10
-	category_infantry = {
+	category_all_infantry = {
 		breakthrough = 0.1
 	}
 

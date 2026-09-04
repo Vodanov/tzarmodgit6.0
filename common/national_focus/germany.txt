@@ -80,7 +80,7 @@ focus_tree = {
 		relative_position_id = GER_rhineland
 		x = -21
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -131,7 +131,7 @@ focus_tree = {
 		mutually_exclusive = {focus = ITA_befriend_japan}
 		available = {
 			OR ={ NOT = {JAP = {has_completed_focus = JAP_intervene_in_china} }
-			date<1937.7.1}}
+			date<1938.1.1}}
 		x = 0
 		y = 1
 		cost = 5
@@ -305,7 +305,7 @@ focus_tree = {
 		relative_position_id = GER_hh_kung
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -384,6 +384,10 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = Schacht_buff
+				add_idea = Schacht_buff2
+			}
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -881,7 +885,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_civilian_industry
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -908,7 +912,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_civilian_industry
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1109,7 +1113,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_establish_the_Einheitspakt
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1546,7 +1550,7 @@ focus_tree = {
 		icon = GFX_focus_GER_airforce
 		prerequisite = { focus = GER_rhineland }
 		relative_position_id = GER_rhineland
-		x = 7
+		x = 10
 		text = "Air Innovations"
 		y = 1
 		cost = 5
@@ -1597,76 +1601,13 @@ focus_tree = {
 			show_ideas_tooltip = ritter_von_greim
 		}
 	}
-	focus = {
-		id = GER_tank_designer
-		text = "Panzerwaffe Development Program"
-		icon = GFX_focus_GER_combined_arms_historical
-		prerequisite = { focus = GER_army_innovation }
-		relative_position_id = GER_army_innovation
-		x = 0
-		y = 2
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 25
-			add_political_power = 10
-		}
-	}
-		focus = {
-		id = GER_tank_designer_HEN
-		mutually_exclusive = {focus = GER_tank_designer_MAN}
-		text = "Henschel Tiger Program "
-		icon = GFX_focus_generic_heavy_tank
-		prerequisite = { focus = GER_tank_designer }
-		relative_position_id = GER_tank_designer
-		x = 1
-		y = 1
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = "Unlocks an upgrade for Henschel MIO"
-			custom_effect_tooltip = "     "
-			custom_effect_tooltip = ger_hen_tt
-		}
-	}
-	focus = {
-		id = GER_tank_designer_MAN
-		text = "MIN Panther Initiative"
-		mutually_exclusive = {focus = GER_tank_designer_HEN}
-		icon = GFX_focus_generic_tank_assault
-		prerequisite = { focus = GER_tank_designer }
-		relative_position_id = GER_tank_designer
-		x = -1
-		y = 1
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = "Unlocks an upgrade for Man MIO"
-			custom_effect_tooltip = "     "
-			custom_effect_tooltip = ger_man_tt
-		}
-	}
+	
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_focus_GER_appease_the_wehrmacht
 		prerequisite = { focus = GER_rhineland }
 		relative_position_id = GER_rhineland
-		x = -6
+		x = -4
 		y = 1
 		cost = 7
 		ai_will_do = {
@@ -1734,7 +1675,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_army_innovation }
 
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = GER_army_innovation
 		cost = 10
@@ -1776,6 +1717,188 @@ focus_tree = {
 					technology = heavy_guns3
 					technology = heavy_guns2
 					}
+		}
+	}
+	focus = {
+		id = GER_army_innovation_2
+		icon = GFX_focus_generic_mechanized
+		prerequisite = { focus = GER_army_innovation }
+		x = 2
+		y = 0
+		relative_position_id = GER_soviet_treaty
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 25
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 3
+			# 	category = land_doctrine
+			# }
+			
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}	
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_TD_bonus
+			# 	technology = advanced_light_td
+			# 	technology = improved_medium_td
+			# 	technology = improved_heavy_td
+			# }
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_ART_bonus
+			# 	technology = advanced_light_art
+			# 	technology = improved_medium_art
+			# 	technology = improved_heavy_art
+			# }
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_SPAA_bonus
+			# 	technology = advanced_light_spaa
+			# 	technology = improved_medium_spaa
+			# 	technology = improved_heavy_spaa
+			# }
+		}
+	}
+	focus = {
+		id = GER_form_ss
+		text = "Die Waffen SS"
+		icon = GFX_focus_GER_SS
+		prerequisite = { focus = GER_army_innovation }
+		relative_position_id = GER_army_innovation
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = "Allows to train up to 4 core SS Divisions"
+			set_division_template_cap = {  division_template = "SS Panzerdivision" division_cap = 4 }
+		}
+	}
+	focus = {
+		id = GER_expanded_ss
+		text = "Europäischer Kreuzug"
+		icon = GFX_focus_GER_open_ss
+		prerequisite = { focus = GER_form_ss }
+		mutually_exclusive = {focus = GER_closed_ss}
+		relative_position_id = GER_form_ss
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			has_war_with = SOV
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Allows to train up to 12 additional SS Divisions from European Volunteers at the cost of Quality"
+			set_division_template_cap = {  division_template = "SS Panzerdivision" division_cap = 16 }
+		}
+	}
+	focus = {
+		id = GER_closed_ss
+		text = "Schwarzer Orden"
+		icon = GFX_focus_GER_closed_ss
+		prerequisite = { focus = GER_form_ss }
+		mutually_exclusive = {focus = GER_expanded_ss}
+		relative_position_id = GER_expanded_ss
+		x = 2
+		y = 0
+		cost = 5
+		available = {
+			has_war_with = SOV
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Allows to train up to 6 additional SS Divisions from the Elite of the Reich and Europe"
+			set_division_template_cap = {  division_template = "SS Panzerdivision" division_cap = 10 }
+		}
+	}
+	focus = {
+		id = GER_tank_designer
+		text = "Form the Panzerkommission"
+		icon = GFX_focus_GER_combined_arms_historical
+		prerequisite = { focus = GER_army_innovation }
+		relative_position_id = GER_army_innovation
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = SOV
+			casualties > 500000
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Panzerkommission findings"
+				ahead_reduction = 1
+				bonus = 1
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+			}
+		}
+	}
+	focus = {
+		id = GER_tank_designer_HEN
+		mutually_exclusive = {focus = GER_tank_designer_MAN}
+		text = "Tiger Primacy"
+		icon = GFX_focus_generic_heavy_tank
+		prerequisite = { focus = GER_tank_designer }
+		relative_position_id = GER_tank_designer
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				GER_tiger_idea
+			}
+		}
+	}
+	focus = {
+		id = GER_tank_designer_MAN
+		text = "Panther Massproduction"
+		mutually_exclusive = {focus = GER_tank_designer_HEN}
+		icon = GFX_focus_generic_tank_assault
+		prerequisite = { focus = GER_tank_designer }
+		relative_position_id = GER_tank_designer
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				GER_panther_idea
+			}
 		}
 	}
 
@@ -1856,64 +1979,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_army_innovation_2
-		icon = GFX_focus_generic_mechanized
-		prerequisite = { focus = GER_army_innovation }
-		x = 1
-		y = 1
-		relative_position_id = GER_army_innovation
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 25
-			# add_tech_bonus = {
-			# 	name = land_doc_bonus
-			# 	bonus = 1.0
-			# 	uses = 3
-			# 	category = land_doctrine
-			# }
-			
-			add_tech_bonus = {
-				bonus = 1.5
-				uses = 1
-				category = cat_mechanized_equipment
-			}	
-			# add_tech_bonus = {
-			# 	bonus = 0.00
-			# 	uses = 3
-			# 	ahead_reduction = 4.0
-			# 	name = mech_army_TD_bonus
-			# 	technology = advanced_light_td
-			# 	technology = improved_medium_td
-			# 	technology = improved_heavy_td
-			# }
-			# add_tech_bonus = {
-			# 	bonus = 0.00
-			# 	uses = 3
-			# 	ahead_reduction = 4.0
-			# 	name = mech_army_ART_bonus
-			# 	technology = advanced_light_art
-			# 	technology = improved_medium_art
-			# 	technology = improved_heavy_art
-			# }
-			# add_tech_bonus = {
-			# 	bonus = 0.00
-			# 	uses = 3
-			# 	ahead_reduction = 4.0
-			# 	name = mech_army_SPAA_bonus
-			# 	technology = advanced_light_spaa
-			# 	technology = improved_medium_spaa
-			# 	technology = improved_heavy_spaa
-			# }
-		}
-	}
+	
 
 	focus = {
 		id = GER_rocketry_focus
@@ -1967,7 +2033,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_rhineland }
-		x = 5
+		x = 8
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 5
@@ -2057,7 +2123,7 @@ focus_tree = {
 		available = { date > 1936.9.1 }
 
 		cancel_if_invalid = no
-		x = 0
+		x = 4
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -2534,6 +2600,10 @@ focus_tree = {
 							target = POL
 							type = annex_everything
 						}
+						add_to_war = {
+					    	targeted_alliance = GER
+					    	enemy = ENG
+						}
 					}
 			# custom_effect_tooltip = GER_speer_reminder_tt
 			# custom_effect_tooltip = available_theorist 
@@ -2580,25 +2650,25 @@ focus_tree = {
 
 				ENG = { add_war_support = 0.1 }
 				FRA = { add_war_support = 0.1 }
-				SAF = {	country_event = tfv_south_africa.133 }
-				ENG = { country_event = britain.24
-					125 = {
-					add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-					}
-					129 = {
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
+				# SAF = {	country_event = tfv_south_africa.133 }
+				# ENG = { country_event = britain.24
+				# 	125 = {
+				# 	add_extra_state_shared_building_slots = 2
+				# 		add_building_construction = {
+				# 			type = arms_factory
+				# 			level = 2
+				# 			instant_build = yes
+				# 		}
+				# 	}
+				# 	129 = {
+				# 		add_extra_state_shared_building_slots = 2
+				# 		add_building_construction = {
+				# 			type = arms_factory
+				# 			level = 2
+				# 			instant_build = yes
+				# 		}
+				# 	}
+				# }
 				SPR = { country_event = spain.29 } 
 			}
 			
@@ -2645,6 +2715,10 @@ focus_tree = {
 				declare_war_on = {
 					target = NOR
 					type = annex_everything
+				}
+				add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
 				}
 			
 				add_ideas = { DEN_sahnefront_ns }
@@ -2752,13 +2826,13 @@ focus_tree = {
 		icon = GFX_focus_ger_accept_british_naval_dominance
 		mutually_exclusive = { focus = GER_naval_rearmament }
 		prerequisite = { focus = GER_rhineland }
-		relative_position_id = GER_rhineland
+		relative_position_id = GER_naval_rearmament
 		available = {
 			NOT = { has_war_with = ENG }
 		}
 		cancel_if_invalid = yes
-		x = 15
-		y = 1
+		x = 2
+		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2839,7 +2913,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_accept_british_naval_dominance }
 		relative_position_id = GER_rhineland
-		x = 13
+		x = 16
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -4038,6 +4112,10 @@ focus_tree = {
 						declare_war_on = {
 							target = BEL
 							type = annex_everything
+						}
+						add_to_war = {
+					    	targeted_alliance = GER
+					    	enemy = ENG
 						}
 					}
 					hidden_effect = { news_event = { hours = 6 id = news.234 } }
@@ -5522,7 +5600,7 @@ focus_tree = {
 						date > 1941.1.1 
 						surrender_progress > 0.1
 					}
-					x = 25
+					x = 30
 					y = 8
 				
 			

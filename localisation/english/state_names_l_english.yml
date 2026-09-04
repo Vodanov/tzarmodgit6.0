@@ -437,7 +437,7 @@
  STATE_296: "Portuguese Guinea"
  STATE_297: "Equatorial Guinea"
  STATE_298: "Liberia"
- STATE_299: "Falkland Islands"
+ STATE_299: "Islas Malvinas"
  ARG_STATE_299: "Islas Malvinas"
  STATE_300: "Montevideo" # was uruguay
  STATE_301: "Paraguay"
@@ -872,7 +872,7 @@
  STATE_717: "Sungkiang"
  STATE_718: "Stanleyville"
  STATE_719: "Natal"
- STATE_720: "South Georgia"
+ STATE_720: "Isla San Pedro"
  STATE_721: "East Timor"
  POR_STATE_721: "Portuguese Timor"
  STATE_722: "Petsamo"

@@ -296,11 +296,18 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "paratroopers_tree"
+				name = "shocktroops_tree"
 				position = { x = 140 y = 1025 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+
+			# gridboxtype = {
+			# 	name = "paratroopers_tree"
+			# 	position = { x = 140 y = 1025 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "LEFT"
+			# }
 
 			gridboxtype = {
 				name = "rangers_tech_tree"

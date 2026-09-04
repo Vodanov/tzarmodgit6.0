@@ -768,13 +768,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = MONgaria
 				bonus = 1.15
-				uses = 2
+				uses = 4
 				category = armor
 			}
 			add_tech_bonus = {
 					name = GER_soviet_treaty
 					bonus = 1.5
-					uses = 2
+					uses = 4
 					technology = shit_guns
 					technology = medium_guns2
 					technology = medium_guns3

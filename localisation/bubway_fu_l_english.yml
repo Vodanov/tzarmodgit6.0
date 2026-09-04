@@ -502,3 +502,13 @@ ALLIED_generic_tank_organization:0 "The Queens Corgis"
 ALLIED_heavy_tank_organization:0 "Binni and Sons Clubbing Armored Company"
 ALLIED_infantry_tank_organization:0 "Vauxhall-GM"
 ALLIED_medium_tank_organization:0 "Nuffield"
+
+category_shocktroops:0 "All Shock Troop"
+
+SUBDOCTRINE_SIEGE_EXPERTS:0 "Urban Assault Troops"
+SUBDOCTRINE_SIEGE_EXPERTS_DESC:0 "For when you just can't take Stalingrad."
+siege_experts_storm_postions:0 "Storming Postions"
+siege_experts_siege_support:0 "Siege Support"
+siege_experts_street_combat:0 "Street to Street Combat"
+siege_experts_small_arms_support:0 "Small Arms Training"
+siege_experts_rubble_defence:0 "Makeshift Defences"

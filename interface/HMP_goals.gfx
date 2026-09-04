@@ -1815,10 +1815,10 @@ SpriteType = {
 		name = "GFX_focus_peopletroll"
 		texturefile = "gfx/interface/goals/peopletroll.tga"
 	}
-	SpriteType = { 
-		name = "GFX_focus_SS_recruitment"
-		texturefile = "gfx/interface/goals/SS_recruitment.tga"
-	}
+	#SpriteType = { 
+	#	name = "GFX_focus_SS_recruitment"
+	#	texturefile = "gfx/interface/goals/SS_recruitment.tga"
+	#}
 	SpriteType = { 
 		name = "GFX_focus_barb"
 		texturefile = "gfx/interface/goals/barb.tga"
@@ -1891,4 +1891,16 @@ SpriteType = {
 	# 	name = "GFX_focus_benelux_inv"
 	# 	texturefile = "gfx/interface/goals/benelux_inv.dds"
 	# }
+	SpriteType = { 
+		name = "GFX_focus_GER_SS"
+		texturefile = "gfx/interface/goals/SS_recruitment.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_open_ss"
+		texturefile = "gfx/interface/goals/GER_open_ss.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_closed_ss"
+		texturefile = "gfx/interface/goals/GER_closed_ss.dds"
+	}
 	}

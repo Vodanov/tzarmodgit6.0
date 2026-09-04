@@ -30,7 +30,8 @@ on_startup = {
 			}
 		}
 		GER = {
-			set_technology = { ss_battalions = 1 popup = no }
+		#	set_technology = { ss_battalions = 1 popup = no }
+			set_division_template_cap = {  division_template = "SS Panzerdivision" division_cap = 0 }
 		}
 		735 = {
 			add_province_modifier = {
