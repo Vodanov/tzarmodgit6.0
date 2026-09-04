@@ -78,7 +78,10 @@ SOV_morozov_design_bureau_organization = {
 	icon = GFX_idea_morozov_design_bureau
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	available = {
@@ -205,7 +208,10 @@ SOV_astrov_design_bureau_organization = {
 	icon = GFX_idea_astrov_design_bureau
 	
 	allowed = {
-		original_tag = SOV	
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 	available = {
 		
@@ -331,7 +337,10 @@ SOV_okmo_organization = {
 	icon = GFX_idea_okmo
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	available = {
@@ -463,7 +472,10 @@ SOV_mytishchy_machine_building_plant_organization = {
 	icon = GFX_idea_SOV_mytishchy_machine_building_plant
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	visible = {
@@ -597,7 +609,10 @@ SOV_kirov_organization = {
 	icon = GFX_idea_SOV_kirov
 	
 	allowed = {	
-		original_tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	available = {
@@ -2044,7 +2059,10 @@ SOV_grabin_design_bureau_organization = {
 	icon = GFX_idea_grabin_design_bureau
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 	
 	available = {
@@ -2159,7 +2177,10 @@ SOV_tula_arms_plant_organization = {
 	icon = GFX_idea_tula_arms_plant
 	
 	allowed = {	
-		original_tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	tree_header_text = {
@@ -2301,7 +2322,10 @@ SOV_gaz_organization = {
 	icon = GFX_idea_gaz
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
 	}
 
 	visible = {
@@ -2421,6 +2445,6 @@ SOV_kolomna_organization = {
 	icon = GFX_idea_SOV_kolomna_alt
 	name = "[SOV_kolomna_locomotive_plant_name_dynamic]"
 	allowed = {
-		original_tag = SOV
+		
 	}
 }
