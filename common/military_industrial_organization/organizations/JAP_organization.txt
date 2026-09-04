@@ -12,8 +12,10 @@ JAP_osaka_army_arsenal_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
+		OR = {
 		original_tag = JAP
-		
+		original_tag = MIN
+		}
 	}
 
 	add_trait = {
@@ -27,7 +29,10 @@ JAP_osaka_army_arsenal_organization = {
 		position = { x = -1 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -98,8 +103,10 @@ JAP_sagami_army_arsenal_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_JAP_sagami_arsenal
 	allowed = {	
+		OR = {
 		original_tag = JAP
-		
+		original_tag = MIN
+		}
 	}
 
 	add_trait = {
@@ -113,7 +120,10 @@ JAP_sagami_army_arsenal_organization = {
 		position = { x = -5 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -184,7 +194,10 @@ JAP_mitsubishi_heavy_industries_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_JAP_mitsubishi_tanks
 	allowed = {	
+		OR = {
 		original_tag = JAP
+		original_tag = MIN
+		}
 	}
 
 	available = {
@@ -202,7 +215,10 @@ JAP_mitsubishi_heavy_industries_organization = {
 		position = { x = 1 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -2289,8 +2305,10 @@ JAP_kokura_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_tokyo_arsenal
 	allowed = {	
+		OR = {
 		original_tag = JAP
-
+		original_tag = MIN
+		}
 	}
 
 	available = {
@@ -2308,7 +2326,10 @@ JAP_kokura_arsenal_organization = {
 		position = { x = 1 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -2378,8 +2399,10 @@ JAP_osaka_army_arsenal_artillery_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
-		original_tag = JAP
-		
+		OR = {
+			original_tag = JAP
+			original_tag = MIN
+		}
 	}
 
 	add_trait = {
@@ -2393,7 +2416,10 @@ JAP_osaka_army_arsenal_artillery_organization = {
 		position = { x = 1 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -2423,12 +2449,17 @@ JAP_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
 	allowed = {	 
+		OR = {
 		original_tag = JAP
-		
+		original_tag = MIN
+		}
 	}
 	
 	visible = {
-		
+		OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 	}
 	
 	available = {
@@ -2622,6 +2653,7 @@ JAP_tokyo_automobile_industries_organization = {
 	allowed = {	
 		OR = {
 			original_tag = JAP
+			original_tag = MIN
 		}
 		
 	}
@@ -2765,6 +2797,7 @@ JAP_nagoya_arsenal_organization = {
 		OR = {
 			original_tag = JAP 
 			original_tag = MAN
+			original_tag = MIN
 		}
 		
 	}
@@ -2802,7 +2835,10 @@ JAP_nagoya_arsenal_organization = {
 		position = { x = 1 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
@@ -2833,8 +2869,10 @@ JAP_kayaba_industry_organization = {
 	icon = GFX_idea_JAP_kayaba_industry
 	
 	allowed = {	
-		original_tag = JAP 
-				
+		OR = {
+		original_tag = JAP
+		original_tag = MIN
+		}	
 		
 	}
 
@@ -2845,8 +2883,10 @@ JAP_hitachi_arms_department_organization = {
 	icon = GFX_idea_JAP_hitachi_arms
 	
 	allowed = {	
+		OR = {
 		original_tag = JAP
-		
+		original_tag = MIN
+		}
 	}
 	
 	available = {
@@ -2865,6 +2905,7 @@ JAP_hitachi_arms_department_organization = {
 		
 		visible = {
 			FROM = { original_tag = JAP }
+			FROM = { original_tag = MIN }
 		}
 
 		available = {
@@ -2901,7 +2942,10 @@ JAP_nippon_sharyo_organization = {
 	icon = GFX_idea_JAP_nippon_sharyo
 
 	allowed = {
-		original_tag = JAP
+		OR = {
+			original_tag = JAP
+			original_tag = MIN
+		}
 	}
 
 	initial_trait = {
@@ -2929,7 +2973,10 @@ JAP_nippon_sharyo_organization = {
 		position = { x = 9 y = 0 }  
 		
 		visible = {
-			FROM = { original_tag = JAP }
+			OR = {
+				FROM = { original_tag = JAP }
+				FROM = { original_tag = MIN }
+			}
 		}
 
 		available = {
