@@ -395,7 +395,7 @@ mass_assault = {
 	supply_consumption_factor = -0.10
     out_of_supply_factor = -0.35
 	category_tanks = {
-	    max_strength = 5
+	    max_strength = 3
         default_morale = 0.1
     }
 	infantry = {
