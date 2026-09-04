@@ -396,7 +396,7 @@ commandos = {
     logistics_company = {
         battalion_mult = {
             category = category_light_infantry
-            max_strength = 30
+            max_strength = 3
             add = yes
         }
     }

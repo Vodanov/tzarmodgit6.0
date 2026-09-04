@@ -421,8 +421,8 @@ light_tank_dominance = {
 
     }  
 
-    category_light_armor = {
-        max_strength = 3
+    category_all_armor = {
+        max_strength = 5
     }
 
     rewards = {
