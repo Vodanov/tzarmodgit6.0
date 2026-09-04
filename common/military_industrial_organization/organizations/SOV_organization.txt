@@ -99,11 +99,7 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = { #Three FROM blocs to provide two different check marks in the UI
@@ -140,11 +136,7 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -181,11 +173,7 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -225,11 +213,6 @@ SOV_astrov_design_bureau_organization = {
 		
 	}
 	visible = {
-	
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 
@@ -243,11 +226,7 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
@@ -284,11 +263,7 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -325,11 +300,7 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -370,11 +341,6 @@ SOV_okmo_organization = {
 		
 	}
 	visible = {
-	
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 
@@ -393,11 +359,7 @@ SOV_okmo_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
@@ -434,11 +396,7 @@ SOV_okmo_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -475,11 +433,7 @@ SOV_okmo_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -517,11 +471,6 @@ SOV_mytishchy_machine_building_plant_organization = {
 	}
 
 	visible = {
-	
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 
@@ -545,11 +494,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
@@ -586,11 +531,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -627,11 +568,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -688,11 +625,7 @@ SOV_kirov_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
@@ -729,11 +662,7 @@ SOV_kirov_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -770,11 +699,7 @@ SOV_kirov_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -837,11 +762,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			has_dlc = "Man the Guns"
 		}
 
@@ -891,11 +812,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			NOT = { has_dlc = "Man the Guns" }
 		}
 
@@ -935,11 +852,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_2_X y=@ship_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -970,11 +883,6 @@ SOV_rubin_design_bureau_organization = {
 	}
 
 	visible = {
-	
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 
@@ -992,11 +900,7 @@ SOV_rubin_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			has_dlc = "Man the Guns"
 		}
 
@@ -1046,11 +950,7 @@ SOV_rubin_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			NOT = { has_dlc = "Man the Guns" }
 		}
 
@@ -1092,11 +992,7 @@ SOV_rubin_design_bureau_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_190 }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1129,11 +1025,7 @@ SOV_rubin_design_bureau_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_363 }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1203,11 +1095,7 @@ SOV_black_sea_shipyard_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			has_dlc = "Man the Guns"
 		}
 
@@ -1257,11 +1145,7 @@ SOV_black_sea_shipyard_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			NOT = { has_dlc = "Man the Guns" }
 		}
 
@@ -1303,11 +1187,7 @@ SOV_black_sea_shipyard_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_340 }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1340,11 +1220,7 @@ SOV_black_sea_shipyard_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_leninskaya_kuznitsa_plant }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1409,11 +1285,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			has_dlc = "Man the Guns"
 		}
 
@@ -1463,11 +1335,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 			NOT = { has_dlc = "Man the Guns" }
 		}
 
@@ -1507,10 +1375,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_2_X y=@ship_2_Y }
 		
 		visible = {
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1552,10 +1417,6 @@ SOV_mig_design_bureau_organization = {
 	}
 	
 	visible = {
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 
@@ -1573,11 +1434,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1614,11 +1471,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1660,11 +1513,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -1729,11 +1578,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -1770,11 +1615,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -1816,11 +1657,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-		OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
-
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -1879,10 +1716,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -1919,10 +1753,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -1964,11 +1795,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-		
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 		
 		available = {
@@ -2095,11 +1922,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2136,11 +1959,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2182,11 +2001,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2260,11 +2075,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-		
-		OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2292,11 +2103,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2333,11 +2140,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2415,11 +2218,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2447,11 +2246,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2488,11 +2283,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2530,11 +2321,6 @@ SOV_gaz_organization = {
 	}
 
 	visible = {
-	
-	OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
 		
 	}
 	
@@ -2552,11 +2338,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2584,11 +2366,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
@@ -2625,11 +2403,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			
-			OR = {
-                FROM = { original_tag = SOV}
-                FROM = { original_tag = MON }
-            }
+			FROM = { original_tag = SOV }
 		}
 
 		available = {
