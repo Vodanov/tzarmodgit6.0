@@ -79,7 +79,6 @@ SOV_morozov_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 
 	available = {
@@ -207,7 +206,6 @@ SOV_astrov_design_bureau_organization = {
 	
 	allowed = {
 		original_tag = SOV	
-		tag = MON
 	}
 	available = {
 		
@@ -334,7 +332,6 @@ SOV_okmo_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 
 	available = {
@@ -467,7 +464,6 @@ SOV_mytishchy_machine_building_plant_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 
 	visible = {
@@ -602,7 +598,6 @@ SOV_kirov_organization = {
 	
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	available = {
@@ -745,7 +740,6 @@ SOV_nevskoye_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 	
 	available = {
@@ -879,7 +873,6 @@ SOV_rubin_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 
 	visible = {
@@ -1053,7 +1046,6 @@ SOV_black_sea_shipyard_organization = {
 	
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	tree_header_text = {
@@ -1248,7 +1240,6 @@ SOV_sevastopol_marine_plant_organization = {
 	
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	tree_header_text = {
@@ -1413,7 +1404,6 @@ SOV_mig_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 	
 	visible = {
@@ -1555,7 +1545,6 @@ SOV_ilyushin_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 	
 	available = {
@@ -1699,7 +1688,6 @@ SOV_yakovlev_design_bureau_organization = {
 	
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	available = {
@@ -1836,7 +1824,6 @@ SOV_tupolev_design_bureau_organization = {
 	icon = GFX_idea_tupolev_design_bureau
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	available = {
@@ -2058,7 +2045,6 @@ SOV_grabin_design_bureau_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 	
 	available = {
@@ -2174,7 +2160,6 @@ SOV_tula_arms_plant_organization = {
 	
 	allowed = {	
 		original_tag = SOV
-		tag = MON
 	}
 
 	tree_header_text = {
@@ -2317,7 +2302,6 @@ SOV_gaz_organization = {
 	
 	allowed = {	
 		tag = SOV
-		tag = MON
 	}
 
 	visible = {
@@ -2438,6 +2422,5 @@ SOV_kolomna_organization = {
 	name = "[SOV_kolomna_locomotive_plant_name_dynamic]"
 	allowed = {
 		original_tag = SOV
-		tag = MON
 	}
 }
