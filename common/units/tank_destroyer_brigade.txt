@@ -407,6 +407,7 @@ sub_units = {
 		hard_attack = -0.975
 		suppression = 0.25
 		armor_value = -0.33
+		ap_attack = -0.975
 		
 	}
 
@@ -457,6 +458,8 @@ sub_units = {
 		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
+		ap_attack = -0.975
+
 		
 	}
 
@@ -506,6 +509,8 @@ sub_units = {
 		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
+		ap_attack = -0.975
+
 	}
 
 	modern_tank_destroyer_support = {
@@ -553,6 +558,8 @@ sub_units = {
 		hard_attack = -0.99
 		suppression = 0.25
 		armor_value = -0.33
+		ap_attack = -0.975
+
 		
 	}
 
