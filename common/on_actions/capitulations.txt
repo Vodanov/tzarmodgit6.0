@@ -42,6 +42,16 @@ on_actions = {
 					annex_country = { target = FRA transfer_troops = no }
 				}
 				FRF = { set_equipment_fraction = 0.0 }
+				ENG = {
+					add_to_faction = FRF
+				}
+				FRF = {
+					add_to_war = {
+					    targeted_alliance = ENG
+					    enemy = GER
+					}
+					
+				}
 				# Add a preset amount of equipment for Germany capping france, since they get none otherwise
 				GER = {
 					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 65000 producer = GER }
