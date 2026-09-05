@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	
 	default = no
-	 
+	shared_focus = AXIS_create_axis_command
 	continuous_focus_position = { x = 50 y = 1500 }
 
 
