@@ -1,0 +1,2622 @@
+joint_focus = {
+		id = AXIS_create_axis_command
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 18
+		y = 6
+		
+		#relative_position_id = 
+		
+		
+		offset = {
+			x = -5
+			y = 15
+			trigger = {
+				has_focus_tree = croatia_focus
+			}
+		}
+		
+		offset = {
+			x = 4
+			y = -3
+			trigger = {
+				has_focus_tree = bulgarian_focus
+			}
+		}
+		
+		offset = {
+			x = 4
+			y = 2
+			trigger = {
+				has_focus_tree = romanian_focus
+			}
+		}
+		
+		offset = {
+			x = 3
+			y = 3
+			trigger = {
+				has_focus_tree = hungarian_focus
+			}
+		}
+		
+		offset = {
+			x = 12
+			y = -2
+			trigger = {
+				has_focus_tree = spanish_focus
+			}
+		}
+		
+		offset = {
+			x = 18
+			y = -18
+			trigger = {
+				has_focus_tree = croatia_focus
+			}
+		}
+		
+		offset = {
+			x = -17
+			y = 2
+			trigger = {
+				has_focus_tree = german_focus
+			}
+		}
+		
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				has_focus_tree = italian_focus
+			}
+		}
+		
+		offset = {
+			x = 17
+			y = -2
+			trigger = {
+				has_focus_tree = slovakia_sex
+			}
+		}
+		
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			original_tag = GER
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		add_political_power = 50
+		add_dynamic_modifier = {
+			modifier = AXIS_axis_leader
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+				NOT = { tag = GER }
+				NOT = {
+					
+					has_dynamic_modifier = {
+						modifier = AXIS_axis_member
+					} 
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = AXIS_axis_member
+			}
+		}
+	}
+
+		
+}
+
+joint_focus = {
+	id = AXIS_political_cooperation
+	icon = GFX_focus_generic_improve_the_administration
+	prerequisite = { focus = AXIS_create_axis_command }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_create_axis_command
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+		add_stability = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_political_power = 50
+		add_stability = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_economic_union
+	icon = GFX_focus_GER_integrated_economies
+	prerequisite = { focus = AXIS_political_cooperation }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_political_cooperation
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_stability > 0.49
+		num_of_civilian_factories > 20	
+	}
+	completion_reward = {
+		add_ideas = { AXIS_economic_union }
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+
+
+joint_focus = {
+	id = AXIS_first_joint_institution
+	icon = GFX_focus_NOR_restore_public_trust_in_the_storting	prerequisite = { focus = AXIS_economic_union }
+	prerequisite = { focus = AXIS_economic_union }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_economic_union
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		tag = GER
+	}
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_axis_leader_tt
+		add_to_variable = { 
+			AXIS_research_speed_factor_variable = 0.075
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = { 
+			AXIS_training_time_factor_variable = 0.15
+			tooltip = training_time_factor_tt
+		}
+	}
+
+	completion_reward_joint_member = {
+		custom_effect_tooltip = AXIS_modifies_axis_member_tt
+		add_to_variable = { 
+			AXIS_research_speed_factor_variable = 0.05
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = { 
+			AXIS_training_time_factor_variable = 0.1
+			tooltip = training_time_factor_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+
+
+joint_focus = {
+	id = AXIS_materiel_design
+	
+	icon = GFX_focus_generic_reorient_production
+	
+	prerequisite = { focus = AXIS_create_axis_command }
+
+
+	x = 6
+	y = 1
+	relative_position_id = 	AXIS_create_axis_command
+
+	mutually_exclusive = { focus = AXIS_construction_developments }
+
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 40
+	}
+
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_materiel_design
+			bonus = 1
+			uses = 2 
+			category = infantry_weapons
+		}
+	}
+
+	completion_reward_joint_member = {	
+		add_tech_bonus = {
+			name = NORDIC_materiel_design
+			bonus = 0.45
+			uses = 2 
+			category = infantry_weapons
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_construction_developments
+	
+	icon = GFX_focus_generic_low_cost_housing
+	
+	prerequisite = { focus = AXIS_create_axis_command }
+
+	mutually_exclusive = { focus = AXIS_materiel_design }
+
+	x = 4
+	y = 1
+	relative_position_id = AXIS_create_axis_command
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 40
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_nordic_construction_developments
+			bonus = 1 
+			uses = 2 
+			category = construction_tech
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_nordic_construction_developments
+			bonus = 0.75 
+			uses = 1 
+			category = construction_tech
+		}	
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_industry
+	
+	icon = GFX_focus_GER_vereinigte_stahlwerke
+
+	prerequisite = { focus = AXIS_construction_developments }
+
+	x = -2
+	y = 1
+	relative_position_id = AXIS_construction_developments
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_civilian_factories > 25	
+	}
+	completion_reward_joint_originator = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes 
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			random_select_amount = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes 
+				}
+			}
+			random_select_amount = 2
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_civilian_contributions
+	icon = GFX_focus_SWI_issue_war_bonds
+	prerequisite = { focus = AXIS_industry }
+	x = 0
+	y = 1
+	relative_position_id = AXIS_industry
+
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_civilian_factories > 35
+	}
+	completion_reward_joint_originator = {
+		add_timed_idea = {
+			idea = NORDIC_development_fund_originator_ns
+			days = 365
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_timed_idea = {
+			idea = NORDIC_development_fund_member_ns
+			days = 365
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_fill_the_infrastructure_gaps
+	
+	icon = GFX_focus_generic_road_investment
+	
+	prerequisite = { focus = AXIS_civilian_contributions }
+	mutually_exclusive = { focus = AXIS_develop_resources }
+
+	x = -1
+	y = 1
+	relative_position_id = AXIS_civilian_contributions
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_civilian_factories > 40
+	}
+	completion_reward_joint_originator = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				infrastructure < 3 
+			}
+			random_select_amount = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				infrastructure < 3 
+			}
+			random_select_amount = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_develop_resources
+	
+	icon = GFX_focus_generic_mining_industry
+	
+	prerequisite = { focus = AXIS_civilian_contributions }
+	mutually_exclusive = { focus = AXIS_fill_the_infrastructure_gaps }
+
+	x = 1
+	y = 1
+	relative_position_id = AXIS_civilian_contributions
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_civilian_factories > 40
+	}
+	completion_reward_joint_originator = {
+		if = {
+			limit = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_resources_amount = {
+						resource = oil
+						amount > 0  
+					}
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_resources_amount = {
+						resource = oil
+						amount > 0  
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+		else = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					state_has_any_resource = no
+				}
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				state_has_any_resource = yes 
+			}
+			add_dynamic_modifier = {
+				modifier = NORDIC_efficient_resource_extraction
+			}
+		}
+		
+	}
+
+	completion_reward_joint_member = {
+		if = {
+			limit = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_resources_amount = {
+						resource = oil
+						amount > 0  
+					}
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_resources_amount = {
+						resource = oil
+						amount > 0  
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}
+		else = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					state_has_any_resource = no
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				state_has_any_resource = yes 
+			}
+			add_dynamic_modifier = {
+				modifier = NORDIC_efficient_resource_extraction
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_naval_construction
+	
+	icon = GFX_goal_generic_construct_naval_dockyard
+	
+	prerequisite = { focus = AXIS_fill_the_infrastructure_gaps focus = AXIS_develop_resources }
+	mutually_exclusive = { focus = AXIS_railway_expansion focus = AXIS_nuclear_production }
+	x = 1
+	y = 1
+	relative_position_id = AXIS_fill_the_infrastructure_gaps
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_naval_factories > 50
+	}
+	completion_reward_joint_originator = {
+		every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			is_coastal = yes 
+	 			free_building_slots = {
+	 				building = dockyard
+	 				size > 1
+	 				include_locked = yes 
+	 			}
+	 		}
+	 		random_select_amount = 3
+	 		add_extra_state_shared_building_slots = 1
+	 		add_building_construction = {
+	 			type = dockyard
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}		
+	}
+
+	completion_reward_joint_member = {
+		every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			is_coastal = yes 
+	 			free_building_slots = {
+	 				building = dockyard
+	 				size > 0
+	 				include_locked = yes 
+	 			}
+	 		}
+	 		random_select_amount = 2
+	 		add_extra_state_shared_building_slots = 1 
+	 		add_building_construction = {
+	 			type = dockyard
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_railway_expansion
+	
+	icon = GFX_focus_generic_railroad
+	
+	prerequisite = { focus = AXIS_develop_resources focus = AXIS_fill_the_infrastructure_gaps }
+	mutually_exclusive = { focus = AXIS_naval_construction focus = AXIS_nuclear_production }
+	x = -1
+	y = 1
+	relative_position_id = AXIS_fill_the_infrastructure_gaps
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_civilian_factories > 50
+	}
+	completion_reward_joint_originator = {
+		add_timed_idea = {
+			idea = NORDIC_railway_expansion_originator_ns
+			days = 365
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_timed_idea = {
+			idea = NORDIC_railway_expansion_member_ns
+			days = 365
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}joint_focus = {
+	id = AXIS_electronics
+	
+	icon = GFX_focus_SWE_radiotjanst
+	
+	prerequisite = { focus = AXIS_construction_developments }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_construction_developments
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 45
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_nordic_electronics
+			bonus = 0.5
+			uses = 1 
+			category = electronics
+		}
+	}
+
+	completion_reward_joint_member = {
+			add_tech_bonus = {
+			name = NORDIC_nordic_electronics
+			bonus = 0.25
+			uses = 1 
+			category = electronics
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_research_investments 
+	
+	icon = GFX_focus_generic_university_2
+	
+	prerequisite = { focus = AXIS_materiel_design }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_materiel_design
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 45
+	}
+	completion_reward = {
+		modify_tech_sharing_bonus = {
+			id = AXIS_research_tech_sharing
+			bonus = 0.1
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_nuclear_research
+	
+	icon = GFX_focus_wonderweapons
+	
+	prerequisite = { focus = AXIS_electronics }
+	prerequisite = { focus = AXIS_industry }
+	
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_electronics
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 70
+	}
+	completion_reward = {
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.5
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_nuclear_research
+			bonus = 1
+			uses = 1
+			category = nuclear
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_nuclear_research
+			bonus = 0.5
+			uses = 1
+			category = nuclear
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_nuclear_production
+	
+	icon = GFX_focus_generic_nuclear_development
+	
+	prerequisite = { focus = AXIS_fill_the_infrastructure_gaps focus = AXIS_develop_resources }
+	prerequisite = { focus = AXIS_nuclear_research }
+	mutually_exclusive = { focus = AXIS_naval_construction focus = AXIS_railway_expansion }
+	x = 0
+	y = 2
+	relative_position_id = AXIS_nuclear_research
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		is_special_project_completed = sp:sp_nuclear_reactor
+		num_researched_technologies > 80
+		num_of_civilian_factories > 50
+	}
+	completion_reward = {
+		add_breakthrough_points = {
+			specialization = specialization_nuclear
+			value = 1
+		}
+	}
+
+	completion_reward_joint_originator = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				free_building_slots = {
+	 				building = arms_factory
+	 				size > 0
+	 				include_locked = yes 
+	 			}
+			}
+			random_select_amount = 2
+	 		add_extra_state_shared_building_slots = 1 
+	 		add_building_construction = {
+	 			type = nuclear_reactor
+	 			level = 1
+	 			instant_build = yes
+	 		}			
+		}
+	}
+
+	completion_reward_joint_member = {
+		IF = {
+			limit = {
+				has_tech = nuclear_reactor
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT 
+					free_building_slots = { 
+		 				building = nuclear_reactor
+		 				size > 0
+		 				include_locked = yes 
+		 			}
+		 		}
+		 		add_extra_state_shared_building_slots = 1 
+		 		add_building_construction = {
+		 			type = nuclear_reactor
+		 			level = 1
+		 			instant_build = yes
+		 		}	
+			}
+	 				
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_rocketry
+	
+	icon = GFX_focus_rocketry
+	
+	prerequisite = { focus = AXIS_research_investments }
+	prerequisite = { focus = AXIS_military_industry }
+	
+	x = 0
+	y = 1
+	relative_position_id = AXIS_research_investments
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_researched_technologies > 50
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_nordic_rocketry
+			bonus = 0.25
+			uses = 2 
+			category = rocketry
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_nordic_rocketry
+			bonus = 0.25
+			uses = 1 
+			category = rocketry
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_jet_engines
+	
+	icon = GFX_focus_generic_jet_planes 
+
+	dynamic = yes 
+	prerequisite = { focus = AXIS_rocketry }
+	prerequisite = { focus = AXIS_military_industry_hub focus = AXIS_ad_hoc_military_industry }
+	mutually_exclusive = { focus = AXIS_machine_tools_research focus = AXIS_equipment_conversion_focus }
+	x = 0
+	y = 2
+	relative_position_id = AXIS_rocketry
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_deployed_air_force_size = {
+			size > 999
+		}
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_jet_engines
+			bonus = 2
+			ahead_reduction = 2
+			uses = 2
+			category = jet_technology 
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_jet_engines
+			bonus = 1
+			ahead_reduction = 1
+			uses = 1
+			category = jet_technology 
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_military_industry
+
+	icon = GFX_focus_generic_mass_production
+	
+	prerequisite = { focus = AXIS_materiel_design }
+
+	x = 2
+	y = 1 
+	relative_position_id = AXIS_materiel_design
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_military_factories > 15
+	}
+	completion_reward_joint_originator = {
+		add_dynamic_modifier = {
+			modifier = AXIS_arms_industry
+		}
+		add_to_variable = {
+			AXIS_production_factory_max_efficiency_factor_variable = 0.02
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes  
+				}
+			}
+			add_extra_state_shared_building_slots = 2 
+			add_building_construction = {
+				type = arms_factory
+				level = 2 
+				instant_build = yes 
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_dynamic_modifier = {
+			modifier = AXIS_arms_industry
+		}
+		add_to_variable = { AXIS_production_factory_max_efficiency_factor_variable = 0.05 }
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT 
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes  
+				}
+			}
+			add_extra_state_shared_building_slots = 1 
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_standarized_parts
+	
+	icon = GFX_focus_SWE_let_fly_all_guns
+	
+	prerequisite = { focus = AXIS_military_industry }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_military_industry
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_military_factories > 30
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
+		add_to_variable = { 
+			AXIS_production_factory_efficiency_gain_factor_variable_2 = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+	}
+
+	completion_reward_joint_member = {
+		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
+		add_to_variable = {
+			AXIS_production_factory_efficiency_gain_factor_variable_2 = 0.05
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_military_industry_hub
+	
+	icon = GFX_goal_generic_construct_mil_factory
+	
+	prerequisite = { focus = AXIS_standarized_parts }
+	mutually_exclusive = { focus = AXIS_ad_hoc_military_industry }
+	x = -1
+	y = 1
+	relative_position_id = AXIS_standarized_parts
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_military_factories > 30
+	}
+	completion_reward_joint_originator = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 5
+			random_select_amount = 4
+			add_dynamic_modifier = {
+				modifier = NORDIC_military_industry_hub_leader_dmod
+				scope = ROOT
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			random_select_amount = 3
+			add_dynamic_modifier = {
+				modifier = NORDIC_military_industry_hub_leader_dmod
+				scope = ROOT
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_ad_hoc_military_industry
+	
+	icon = GFX_focus_generic_military_industry
+	
+	prerequisite = { focus = AXIS_standarized_parts }
+	mutually_exclusive = { focus = AXIS_military_industry_hub }
+	x = 1
+	y = 1
+	relative_position_id = AXIS_standarized_parts
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_military_factories > 25
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
+		add_to_variable = {
+			AXIS_production_speed_arms_factory_factor_variable = 0.1
+			tooltip = production_speed_arms_factory_factor_tt
+		}
+	}
+
+	completion_reward_joint_member = {
+		custom_effect_tooltip = AXIS_modifies_arms_industry_tt
+		add_to_variable = {
+			AXIS_production_speed_arms_factory_factor_variable = 0.05
+			tooltip = production_speed_arms_factory_factor_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+
+
+joint_focus = {
+	id = AXIS_machine_tools_research
+	
+	icon = GFX_focus_generic_modernize_industry
+	
+	prerequisite = { focus = AXIS_military_industry_hub focus = AXIS_ad_hoc_military_industry }
+	mutually_exclusive = { focus = AXIS_jet_engines  }
+
+	x = 1
+	y = 1
+	relative_position_id = AXIS_military_industry_hub
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_military_factories > 30
+		num_researched_technologies > 60
+	}	
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_machine_tools_research
+			bonus = 0.5
+			uses = 2 
+			category = cat_production
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_machine_tools_research
+			bonus = 0.25 
+			uses = 1
+			category = cat_production
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_command
+	
+	icon = GFX_focus_CONGO_congolese_generals
+	
+	prerequisite = { focus = AXIS_create_axis_command }
+	
+	x = -6
+	y = 1
+	relative_position_id = AXIS_create_axis_command
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25		
+		add_dynamic_modifier = {
+			modifier = AXIS_axis_joint_high_command
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_army
+
+	icon = GFX_focus_CONGO_congo_army
+
+	prerequisite = { focus = AXIS_command }
+
+	x = 3
+	y = 1
+	relative_position_id = AXIS_command
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_army_manpower = { size > 149999 } 
+		num_divisions > 30
+	}
+	completion_reward_joint_originator = {
+		army_experience = 50
+		add_manpower = 10000
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_command_power_gain_variable = 0.1
+			tooltip = command_power_gain_tt
+		}
+		add_to_variable = {
+			AXIS_max_command_power_variable = 30
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			AXIS_experience_gain_army_variable = 0.1
+			tooltip = experience_gain_army_tt
+		}
+
+		add_breakthrough_points = {
+			specialization = specialization_land
+			value = 1
+		}
+	}
+
+	completion_reward_joint_member = {
+		army_experience = 25
+		add_manpower = 5000
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_command_power_gain_variable = 0.05
+			tooltip = command_power_gain_tt_sffmf
+		}
+		add_to_variable = {
+			AXIS_max_command_power_variable = 25
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			AXIS_experience_gain_army_variable = 0.05
+			tooltip = experience_gain_army_tt
+		}
+
+		add_breakthrough_progress = {
+			specialization = specialization_land
+			value = 0.75
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_joint_military_exercises
+	
+	icon = GFX_focus_SWE_varnplikt
+	
+	prerequisite = { focus = AXIS_army }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_army
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_army_manpower = { size > 179999 } 
+		num_divisions > 35
+	}
+
+	completion_reward_joint_originator = {
+		army_experience = 25
+		add_doctrine_cost_reduction = {
+			name = NORDIC_joint_military_exercises
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine 
+		}
+		add_mastery = {
+			amount = 50
+			folder = land
+		}
+	}
+
+	completion_reward_joint_member = {
+		army_experience = 10
+		add_doctrine_cost_reduction = {
+			name = NORDIC_joint_military_exercises
+			cost_reduction = 0.25
+			uses = 1
+			category = land_doctrine 
+		}
+		add_mastery = {
+			amount = 25
+			folder = land
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_unified_recruitment
+	
+	icon = GFX_focus_GER_gebirgsjager
+	
+	prerequisite = { focus = AXIS_joint_military_exercises }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_joint_military_exercises
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_army_manpower = { size > 199999 } 
+		num_divisions > 40
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_command_power_gain_variable = 0.1
+			tooltip = command_power_gain_tt
+		}
+		add_to_variable = {
+			AXIS_max_command_power_variable = 25
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			AXIS_weekly_manpower_variable = 250
+			tooltip = weekly_manpower_tt
+		}
+	}
+
+	completion_reward_joint_member = {
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_command_power_gain_variable = 0.1
+			tooltip = command_power_gain_tt_sffmf
+		}
+		add_to_variable = {
+			AXIS_max_command_power_variable = 20
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			AXIS_weekly_manpower_variable = 250
+			tooltip = weekly_manpower_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_mechanized_army
+	
+	icon = GFX_focus_generic_mechanized
+	
+	prerequisite = { focus = AXIS_unified_recruitment }
+	mutually_exclusive = { focus = AXIS_infantry_first }
+	x = -1
+	y = 1
+	relative_position_id = AXIS_unified_recruitment
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_tech = motorised_infantry
+		has_army_size = {
+			size > 14
+			type = motorized
+		}
+
+	}
+
+	completion_reward = {
+		
+	}
+
+	completion_reward_joint_originator = {
+		army_experience = 40
+		add_tech_bonus = {
+			name = NORDIC_mechanized_army
+			bonus = 0.5
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		add_tech_bonus = {
+			name = NORDIC_mechanized_army
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+	}
+
+	completion_reward_joint_member = {
+		army_experience = 20
+		add_tech_bonus = {
+			name = NORDIC_mechanized_army
+			bonus = 0.25
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		add_tech_bonus = {
+			name = NORDIC_mechanized_army
+			bonus = 0.25
+			uses = 1
+			category = armor
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_infantry_first
+	
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+	
+	prerequisite = { focus = AXIS_unified_recruitment }
+	mutually_exclusive = { focus = AXIS_mechanized_army }
+	x = 1
+	y = 1
+	relative_position_id = AXIS_unified_recruitment
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_army_size = {
+			size > 49
+			type = infantry
+		}
+		has_army_manpower = { size > 299999 } 
+	}
+	completion_reward_joint_originator = {
+		army_experience = 40
+		add_tech_bonus = {
+			name = NORDIC_infantry_first
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+
+	completion_reward_joint_member = {
+		army_experience = 20
+		add_tech_bonus = {
+			name = NORDIC_infantry_first
+			bonus = 0.25
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_navy
+
+	icon = GFX_focus_GER_seeherrschaft
+	
+	prerequisite = { focus = AXIS_command }
+
+	x = -2
+	y = 1
+	relative_position_id = AXIS_command
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 19
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_command_power = 50
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_experience_gain_navy_variable = 0.1
+			tooltip = experience_gain_navy_tt_sffmf
+		}
+		add_breakthrough_points = {
+			specialization = specialization_naval
+			value = 1
+		}
+		add_mastery = {
+			amount = 50
+			folder = naval
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_command_power = 25
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_experience_gain_navy_variable = 0.05
+			tooltip = experience_gain_navy_tt_sffmf_2
+		}
+
+		add_breakthrough_progress = {
+			specialization = specialization_naval
+			value = 0.75
+		}
+		add_mastery = {
+			amount = 25
+			folder = naval
+		}		
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_naval_exercises
+	
+	icon = GFX_focus_generic_naval_discipline
+	
+	prerequisite = { focus = AXIS_navy }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_navy
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 34
+		}
+		num_of_naval_factories > 9
+	}
+	completion_reward_joint_originator = {
+		navy_experience = 50
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_naval_doctrine_cost_factor_variable = -0.1
+			tooltip = naval_doctrine_cost_factor_tt
+		}
+		add_doctrine_cost_reduction = {
+			name = NORDIC_naval_exercises
+			cost_reduction = 0.5
+			uses = 1
+			category = naval_doctrine 
+		}
+		add_mastery_bonus = {
+			name = NORDIC_naval_exercises
+			bonus = 0.1
+			days = 180
+			folder = naval
+		}
+	}
+
+	completion_reward_joint_member = {
+		navy_experience = 25
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_naval_doctrine_cost_factor_variable = -0.05
+			tooltip = naval_doctrine_cost_factor_tt
+		}
+		add_doctrine_cost_reduction = {
+			name = NORDIC_naval_exercises
+			cost_reduction = 0.25
+			uses = 1
+			category = naval_doctrine 
+		}		 
+		add_mastery_bonus = {
+			name = NORDIC_naval_exercises
+			bonus = 0.05
+			days = 180
+			folder = naval
+		}		
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_naval_officer_academy
+	
+	icon = GFX_focus_generic_military_academy
+	
+	prerequisite = { focus = AXIS_navy }
+
+	x = 3
+	y = 1
+	relative_position_id = AXIS_navy
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 29
+		}
+	}
+
+	completion_reward = {
+		every_navy_leader = {
+			random_select_amount = 4
+			gain_xp = 400
+			add_unit_leader_trait = navy_career_officer
+		} 
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_construct_new_dockyards
+	
+	icon = GFX_goal_generic_construct_naval_dockyard
+
+	prerequisite = { focus = AXIS_naval_exercises }
+	x = 0
+	y = 1
+	relative_position_id = AXIS_naval_exercises
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		any_owned_state = {
+			is_controlled_by = PREV 
+			is_coastal = yes
+		}
+		has_navy_size = {
+			size > 39
+		}
+		num_of_naval_factories > 14		
+	}
+	completion_reward_joint_originator = {
+		every_owned_state = {
+			limit = {	
+				is_controlled_by = ROOT 
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 1 
+					include_locked = yes 
+				} 
+			}
+			add_extra_state_shared_building_slots = 2
+			random_select_amount = 3
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		every_owned_state = {
+			limit = {	
+				is_controlled_by = ROOT 
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 1 
+					include_locked = yes 
+				} 
+			}
+			add_extra_state_shared_building_slots = 2
+			random_select_amount = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_naval_research_institute
+	
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	
+	prerequisite = { focus = AXIS_construct_new_dockyards }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_construct_new_dockyards
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_of_naval_factories > 14
+		num_researched_technologies > 49
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = NORDIC_naval_research_institute
+			bonus = 0.50
+			uses = 3 
+			category = naval_equipment
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = NORDIC_naval_research_institute
+			bonus = 0.25
+			uses = 2 
+			category = naval_equipment
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_submarine_cooperation
+	
+	icon = GFX_goal_generic_navy_submarine
+	
+	prerequisite = { focus = AXIS_naval_research_institute }
+	mutually_exclusive = { focus = AXIS_carrier_effort focus = AXIS_amphibious_forces }
+	x = 0
+	y = 1
+	relative_position_id = AXIS_naval_research_institute
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 39
+			type = submarine
+		}
+		num_of_naval_factories > 19
+	}
+
+	completion_reward_joint_originator = {
+		add_ideas = AXIS_joint_submarines_effort
+		add_tech_bonus = {
+			name = NORDIC_submarine_cooperation
+			bonus = 0.3
+			ahead_reduction = 0.5
+			uses = 2
+			category = ss_tech
+		}
+		add_mastery = {
+			amount = 75
+			track = submarines
+		}
+		every_owned_state = {
+			random_select_amount = 2
+			limit = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes 
+				}
+			}	
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+	completion_reward_joint_member = {
+		add_ideas = AXIS_joint_submarines_effort
+		add_tech_bonus = {
+			name = NORDIC_submarine_cooperation
+			bonus = 0.1
+			ahead_reduction = 0.25
+			uses = 1
+			category = ss_tech
+		}
+		add_mastery = {
+			amount = 50
+			track = submarines
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes 
+				}
+			}	
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_mountaineers
+	
+	icon = GFX_focus_SMB_special_forces_option_1
+	
+	prerequisite = { focus = AXIS_mechanized_army focus = AXIS_infantry_first }
+
+	x = 1
+	y = 1
+	relative_position_id = AXIS_mechanized_army
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		num_divisions > 49
+	}
+
+	completion_reward_joint_originator = {
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = YUG_mountain_brigades
+			cost_reduction = 0.5
+			uses = 1
+			category = special_forces_doctrine
+		}
+		add_ideas = AXIS_joint_mountaineers_effort
+	}
+
+	completion_reward_joint_member = {
+		navy_experience = 25
+		add_doctrine_cost_reduction = {
+			name = YUG_mountain_brigades
+			cost_reduction = 0.25
+			uses = 1
+			category = special_forces_doctrine
+		}
+		add_ideas = AXIS_joint_mountaineers_effort
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_amphibious_forces
+	
+	icon = GFX_focus_generic_naval_invasion
+	
+	prerequisite = { focus = AXIS_naval_officer_academy }
+	prerequisite = { focus = AXIS_joint_military_exercises }
+	prerequisite = { focus = AXIS_naval_research_institute }
+	mutually_exclusive = { focus = AXIS_carrier_effort focus = AXIS_submarine_cooperation }
+
+	x = 0
+	y = 3
+	relative_position_id = AXIS_naval_officer_academy
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 49
+		}
+		num_of_naval_factories > 19
+	}
+	completion_reward_joint_originator = {
+		navy_experience = 25
+		army_experience = 25
+		add_ideas = AXIS_joint_amphibious_effort
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces 
+			bonus = 0.25
+			uses = 1 
+			category = tp_tech
+		}
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces
+			bonus = 0.3 
+			uses = 1
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces
+			bonus = 0.25
+			uses = 1
+			technology = amphibious_mechanized_infantry
+		}
+	}
+
+	completion_reward_joint_member = {	
+		add_ideas = AXIS_joint_amphibious_effort
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces 
+			bonus = 0.2
+			uses = 1 
+			category = tp_tech
+		}
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces
+			bonus = 0.2 
+			uses = 1 
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			name = NORDIC_amphibious_forces
+			bonus = 0.25
+			uses = 1
+			technology = amphibious_mechanized_infantry
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_airforce
+
+	icon = GFX_focus_generic_multi_role_aircraft
+
+	prerequisite = { focus = AXIS_command }
+
+	x = -5
+	y = 0
+	relative_position_id = AXIS_navy
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_deployed_air_force_size = {
+			size > 199
+		}
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_experience_gain_air_variable = 0.1
+			tooltip = experience_gain_air_tt
+		}
+		add_tech_bonus = {
+			name = SWI_modernize_airforce
+			bonus = 0.5
+			ahead_reduction = 0.25
+			uses = 2
+			category = light_air
+		}
+		add_breakthrough_points = {
+			specialization = specialization_air
+			value = 1
+		}
+	}
+
+	completion_reward_joint_member = { 
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_experience_gain_air_variable = 0.05
+			tooltip = experience_gain_air_tt_sffmf
+		}
+		add_tech_bonus = {
+			name = SWI_modernize_airforce
+			bonus = 0.5
+			uses = 1
+			category = light_air
+		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.75
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_air_exercises
+	icon = GFX_focus_SOV_flying_clubs
+	prerequisite = { focus = AXIS_airforce }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_airforce
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_deployed_air_force_size = {
+			size > 349
+		}
+	}
+	completion_reward_joint_originator = {
+		air_experience = 50
+		add_doctrine_cost_reduction = {
+			name = NORDIC_air_exercises
+			cost_reduction = 0.5
+			uses = 2
+			category = air_doctrine 
+		}
+		add_mastery_bonus = {
+			name = NORDIC_air_exercises
+			bonus = 0.1
+			days = 180
+			folder = air
+		}
+	}
+
+	completion_reward_joint_member = {
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			name = NORDIC_air_exercises
+			cost_reduction = 0.25
+			uses = 1
+			category = air_doctrine 
+		}	
+		add_mastery_bonus = {
+			name = NORDIC_air_exercises
+			bonus = 0.05
+			days = 180
+			folder = air
+		}		
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_air_production
+	
+	icon = GFX_focus_generic_aircraft_production
+	
+	prerequisite = { focus = AXIS_air_exercises }
+
+	x = 0
+	y = 1
+	relative_position_id = AXIS_air_exercises
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_deployed_air_force_size = {
+			size > 399
+		}
+	}
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward_joint_originator = {
+		add_ideas = AXIS_naval_airforce_leader_2
+	}
+
+	completion_reward_joint_member = {
+		add_ideas = AXIS_naval_airforce_member_2
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_naval_aircraft
+	icon = GFX_goal_generic_air_naval_bomber
+	prerequisite = { focus = AXIS_airforce }
+	prerequisite = { focus = AXIS_navy }
+
+	x = 2
+	y = 1
+	relative_position_id = AXIS_airforce
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_deployed_air_force_size = {
+			size > 249
+		}
+	}
+		completion_reward_joint_originator = {
+		add_ideas = AXIS_naval_airforce_leader_1
+	}
+
+	completion_reward_joint_member = {
+		add_ideas = AXIS_naval_airforce_member_1
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_bomber_command
+	
+	icon = GFX_focus_generic_long_range_aircraft
+	
+	prerequisite = { focus = AXIS_air_production }
+
+	mutually_exclusive = { focus = AXIS_fighter_command }
+
+	x = -1
+	y = 1
+	relative_position_id = AXIS_air_production
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		OR = {
+			has_deployed_air_force_size = {
+				size > 249
+				type = cas
+			}
+			has_deployed_air_force_size = {
+				size > 249
+				type = tactical_bomber
+			}
+			has_deployed_air_force_size = {
+				size > 249
+				type = strategic_bomber
+			}
+		}
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_air_cas_present_factor_variable = 0.15
+			tooltip = air_cas_present_factor_tt
+		}
+		add_to_variable = {
+			AXIS_air_strategic_bomber_bombing_factorvariable = 0.15
+			tooltip = air_strategic_bomber_bombing_factor_tt
+		}
+	}
+
+	completion_reward_joint_member = { 
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt 
+		add_to_variable = {
+			AXIS_air_cas_present_factor_variable = 0.1
+			tooltip = air_cas_present_factor_tt
+		}
+		add_to_variable = {
+			AXIS_air_strategic_bomber_bombing_factorvariable = 0.1
+			tooltip = air_strategic_bomber_bombing_factor_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_fighter_command
+	icon = GFX_focus_generic_cas_aircraft
+	prerequisite = { focus = AXIS_air_production }
+
+	mutually_exclusive = { focus = AXIS_bomber_command }
+
+	x = 1
+	y = 1
+	relative_position_id = AXIS_air_production
+	cost = 5
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		OR = {
+			has_deployed_air_force_size = {
+				size > 349
+				type = heavy_fighter
+			}
+			has_deployed_air_force_size = {
+				size > 349
+				type = fighter
+			}
+		}
+	}
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_air_intercept_efficiency_variable = 0.15
+			tooltip = air_intercept_efficiency_tt
+		}
+		add_to_variable = {
+			AXIS_air_superiority_efficiency_variable = 0.15
+			tooltip = air_superiority_efficiency_tt
+		}
+	}
+
+	completion_reward_joint_member = {  
+		custom_effect_tooltip = AXIS_modifies_axis_joint_high_command_tt
+		add_to_variable = {
+			AXIS_air_intercept_efficiency_variable = 0.1
+			tooltip = air_intercept_efficiency_tt
+		}
+		add_to_variable = {
+			AXIS_air_superiority_efficiency_variable = 0.1
+			tooltip = air_superiority_efficiency_tt
+		}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_ground_operations
+	
+	icon = GFX_focus_generic_air_bases
+	
+	prerequisite = { focus = AXIS_fighter_command focus = AXIS_bomber_command }
+
+	x = 1
+	y = 1
+	relative_position_id = AXIS_bomber_command
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_tech = cavity_magnatron
+		has_tech = interwar_antiair
+		any_owned_state = {
+			air_base > 7
+		}
+	}
+	completion_reward_joint_originator = {
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = radar_station
+	 				size > 1 
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 3
+	 		add_building_construction = {
+	 			type = radar_station
+	 			level = 2
+	 			instant_build = yes
+	 		}
+	 	}
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			air_base > 3 
+	 			free_building_slots = {
+	 				building = air_base
+	 				size > 2 
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 3
+	 		add_building_construction = {
+	 			type = air_base
+	 			level = 4
+	 			instant_build = yes
+	 		}
+	 	}
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = anti_air_building
+	 				size > 0
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 3
+	 		add_building_construction = {
+	 			type = anti_air_building
+	 			level = 2
+	 			instant_build = yes
+	 		}
+	 	}
+	}
+
+	completion_reward_joint_member = {
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = radar_station
+	 				size > 0 
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 2
+	 		add_building_construction = {
+	 			type = radar_station
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			air_base > 2 
+	 			free_building_slots = {
+	 				building = air_base
+	 				size > 1 
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 2
+	 		add_building_construction = {
+	 			type = air_base
+	 			level = 3
+	 			instant_build = yes
+	 		}
+	 	}
+	 	every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = anti_air_building
+	 				size > 0
+	 				include_locked = no 
+	 			}
+	 		}
+	 		random_select_amount = 3
+	 		add_building_construction = {
+	 			type = anti_air_building
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}	
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
+joint_focus = {
+	id = AXIS_carrier_effort
+	
+	icon = GFX_focus_generic_air_carrier
+	
+	prerequisite = { focus = AXIS_naval_aircraft }
+	prerequisite = { focus = AXIS_naval_research_institute }
+	mutually_exclusive = { focus = AXIS_submarine_cooperation focus = AXIS_amphibious_forces }
+
+	x = 0
+	y = 3
+	relative_position_id = AXIS_naval_aircraft
+	cost = 10
+
+	text_icon = NORDIC_focus_style
+
+	joint_trigger = { is_in_faction_with = GER }
+
+	available = {
+		has_navy_size = {
+			size > 0
+			type = carrier
+		}
+		has_deployed_air_force_size = {
+			size > 399
+		}
+	}	
+
+	completion_reward_joint_originator = {
+		navy_experience = 25
+		add_ideas = AXIS_joint_carrier_effort
+		every_owned_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = dockyard
+	 				size > 0
+	 				include_locked = yes 
+	 			}
+	 		}
+	 		random_select_amount = 2
+	 		add_extra_state_shared_building_slots = 1 
+	 		add_building_construction = {
+	 			type = dockyard
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}
+	 	add_tech_bonus = {
+	 		name = NORDIC_carrier_effort
+	 		bonus = 0.75
+	 		uses = 1 
+	 		category = cv_tech
+	 	}
+	}
+
+	completion_reward_joint_member = {
+		navy_experience = 10
+		add_ideas = AXIS_joint_carrier_effort
+		random_owned_controlled_state = {
+	 		limit = {
+	 			is_controlled_by = ROOT
+	 			free_building_slots = {
+	 				building = dockyard
+	 				size > 0
+	 				include_locked = yes 
+	 			}
+	 		}
+	 		add_extra_state_shared_building_slots = 1  
+	 		add_building_construction = {
+	 			type = dockyard
+	 			level = 1
+	 			instant_build = yes
+	 		}
+	 	}
+	 	add_tech_bonus = {
+	 		name = NORDIC_carrier_effort
+	 		bonus = 0.5 
+	 		uses = 1 
+	 		category = cv_tech
+	 	}
+	}
+	
+	ai_will_do = {
+		base = 6
+	}
+}
+
