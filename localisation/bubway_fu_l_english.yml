@@ -62,10 +62,10 @@ maori_affairs:0 "Maori Affairs"
 education_reformer_2:0 "Education Reformer"
 minister_of_everything:0 "Seasoned Minister"
 
-NZL_bob_semple:0 "Bob Semple"
-NZL_john_a_lee:0 "John A. Lee"
-NZL_apirana_ngata:0 "Sir Āpirana Ngata"
-NZL_ce_beeby:0 "C.E Beeby"
+# NZL_bob_semple:0 "Bob Semple"
+# NZL_john_a_lee:0 "John A. Lee"
+# NZL_apirana_ngata:0 "Sir Āpirana Ngata"
+# NZL_ce_beeby:0 "C.E Beeby"
 
 ######### NEO INDIA
 idea_RAJ_independence_movement_tt: "Modifies §Y$idea_RAJ_independence_movement$§!\nEffective Change:"
