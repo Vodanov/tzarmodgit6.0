@@ -243,4 +243,5 @@ units = {
 		location = 1149 
 		division_template = "Mediums" 
 		start_experience_factor = 0.5
-	} 
+}
+}
