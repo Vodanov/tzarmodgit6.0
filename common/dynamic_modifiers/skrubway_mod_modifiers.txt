@@ -193,3 +193,8 @@ idea_RAJ_royal_indian_navy = {
 	
 
 }
+
+NZL_manpower_dynamic_modifier = {
+	icon = GFX_idea_eng_imperial_conscription
+	conscription = NZL_conscription
+}

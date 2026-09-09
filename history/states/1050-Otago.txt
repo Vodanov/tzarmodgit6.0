@@ -1,13 +1,13 @@
 state={
-	id=723
-	name="STATE_723"
+	id=1050
+	name="STATE_1050"
 	resources={
 		tungsten=4
 	}
 	provinces={
-		2197 2203 5195 8212 12966 
+		2211 8232 8241 12974 12980 12988 
 	}
-	manpower=547198
+	manpower=180000
 	buildings_max_level_factor=1
 	state_category=rural
 	local_supplies=0
@@ -15,14 +15,10 @@ state={
 	history={
 		owner = NZL
 		buildings = {
-			infrastructure = 3 #was: 5
-			air_base = 1
-			2197 = {
-				naval_base = 1
-			}
+			infrastructure = 3 
 		}
 		victory_points = {
-			2197 5
+			2211 5
 		}
 		
 		add_core_of = NZL
