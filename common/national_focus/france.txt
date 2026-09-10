@@ -52,7 +52,7 @@
 	focus = {
 		id = FRA_invest_in_the_colonies
 		icon = GFX_focus_ETH_sway_the_warlords
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		prerequisite = {
@@ -386,7 +386,7 @@
 		id = FRA_begin_rearmament
 		icon = GFX_focus_war_production
 		x = 0
-		y = 5
+		y = 7
 		offset = {
 			x = 0
 			y = 0
@@ -1245,8 +1245,8 @@
 		text = "Victoire De La Droite"
 		icon = GFX_focus_ARG_defense_and_democracy
 		overlay = GFX_focus_election_overlay_blue_1
-		x = 5
-		y = 1
+		x = 8
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = {
@@ -1306,8 +1306,8 @@
 		text = "Victoire De La Gauche"
 		icon = GFX_focus_NORDIC_com_form_alliance
 		overlay = GFX_focus_election_overlay_red_1
-		x = -6
-		y = 1
+		x = -8
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = {
