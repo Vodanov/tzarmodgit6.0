@@ -55,7 +55,7 @@ categories =  {
 		sound_type = desert
 
 		units = {
-			attack = -0.25
+			attack = -0.275
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05 #0.10
 		supply_flow_penalty_factor = 0.1
@@ -104,7 +104,7 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.4
+			attack = -0.425
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.50
@@ -120,7 +120,7 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.3
+			attack = -0.35
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.20
@@ -161,7 +161,7 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.4
+			attack = -0.45
 		}
 		# sickness_chance = 1.0
 		

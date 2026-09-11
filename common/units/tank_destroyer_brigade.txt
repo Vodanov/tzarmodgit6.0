@@ -35,35 +35,47 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		breakthrough = -0.42
+		breakthrough = -0.6
 		ap_attack = 0.1
 		suppression = 1.0
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.1
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.4
+			defence = -0.85
+			movement = -0.85
 		}
 		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.35
+			defence = -0.5
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
 		}
 		river = { 
-			attack = -0.2 
-			movement = -0.2
+			attack = -0.1
+			movement = -0.1
 		}
 		amphibious = { 
-			attack = -0.6
+			attack = -0.4
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 	
@@ -102,40 +114,62 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.22
 
-		breakthrough = -0.25
+		breakthrough = -0.4
 		ap_attack = 0.1
 		suppression = 1.25
 
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.25
+			defence = -0.05
+			movement = -0.2
 		}
-		hills = 	{
-		    attack = -0.1
+		hills = {
+		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
 		}
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			defence = -0.35 
+			movement = -0.3
 		}
 		marsh = {
 		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
+			defence = -0.35 	
 			movement = -0.2
 		}
+		urban = {
+			attack = -0.45
+			defence = -0.55
+		}
+		village = {
+			attack = -0.15
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.15
+			movement = -0.15	
+		}
 		amphibious = { 
-			attack = -0.7
+			attack = -0.8
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
+	
 	
 	heavy_tank_destroyer_brigade = {
 		abbreviation = "HTD"
@@ -173,41 +207,59 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.3
 
-		breakthrough = -0.25
+		breakthrough = -0.3
 		ap_attack = 0.1
 		suppression = 1.25
 		
 		forest = {
-		    attack = -0.40
-			movement = -0.40
+		    attack = -0.35
+			defence = -0.05
+			movement = -0.2
 		}
 		hills = {
 		    attack = -0.20
+			defence = -0.4 
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.85
+			defence = -0.85
+			movement = -0.85
 		}
 		jungle = {
-		    attack = -0.6
-			movement = -0.4
+		    attack = -0.3
+			defence = -0.35 
+			movement = -0.3
 		}
 		marsh = {
-		    attack = -0.4 
+		    attack = -0.1 
+			defence = -0.35 	
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.5
+			attack = -0.45
+			defence = -0.55
+		}
+		village = {
+			attack = -0.15
 			defence = -0.2
 		}
 		river = { 
-			attack = -0.4 
-			movement = -0.4
+			attack = -0.15
+			movement = -0.15	
 		}
 		amphibious = { 
-			attack = -0.8 
+			attack = -0.8
 		}
-		fort = {
-			attack = 0.05
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
+		deep_desert = {
+			attack = -0.2
+			movement = -0.1
+			defence = -0.2
 		}
 	}
 	
