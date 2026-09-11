@@ -8334,4 +8334,212 @@ tank_refurbishment_plant = { #NSB
 			factor = 1
 		}
 	}
+
+	## NZL Traits ##
+
+	NZL_minister_of_public_works = {
+		sprite = 10
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.8
+				date < 1939.1.1
+			}
+		}
+	}
+
+	NZL_social_welfare_architect_trait = {
+		sprite = 13
+		random = no
+		
+		production_speed_industrial_complex_factor = 0.05
+		stability_factor = 0.05
+
+	}
+
+	NZL_pro_american_nationalist_trait = {
+		sprite = 13
+		random = no
+		
+		war_support_factor = 0.05
+		party_popularity_stability_factor = 0.1
+
+	}
+
+	NZL_new_zealand_legionare_trait = {
+		sprite = 13
+		random = no
+		
+		justify_war_goal_time = -0.15
+		conscription_factor = 0.1
+
+	}
+
+	NZL_reserve_bank_governor = {
+		sprite = 13
+		random = no
+		
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.05
+
+	}
+
+	NZL_hydro_electricity_professor = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.05
+		research_speed_factor = 0.08
+	}
+
+	NZL_treasury_secretary = {
+		random = no
+		sprite = 13
+		
+		consumer_goods_factor = -0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+	}
+
+	conglomerate = {
+		random = no
+
+		consumer_goods_factor = 0.05 #yes, this is actually a penalty
+		local_resources_factor = 0.05
+		production_lack_of_resource_penalty_factor = -0.05
+
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.025
+				instant = yes
+			}
+			artillery = {
+				build_cost_ic = -0.025
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	consumer_goods_conglomerate = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	propaganda_agency = {
+		random = no
+		
+		war_stability_factor = 0.05
+		weekly_casualties_war_support = 0.006
+		weekly_convoys_war_support = 0.004
+		weekly_bombing_war_support = 0.002
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_focused_central_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	construction_company_shell = { #Blank ver. of construction_company
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	engine_manufacturing_concern = {
+		random = no
+
+		equipment_conversion_speed = 0.25
+
+		equipment_bonus = {
+			small_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+			
+		equipment_bonus = {
+			motorized_equipment = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	commercial_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		consumer_goods_factor = -0.15
+		trade_opinion_factor = 0.15
+	}
+
+	ICE_trade_unionist = { #Unlocks Rally Workers 
+		random = no
+		sprite = 10 
+		#power_balance_daily = 0.003
+		communism_drift = 0.02	
+		production_factory_max_efficiency_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.3
+	}
+
+	leftist_independent = {
+		random = no
+		sprite = 13
+		army_morale_Factor = 0.10
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
+
+	agrarian_nationalist = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		global_building_slots_factor = 0.1
+		consumer_goods_expected_value = -0.10
+	}
+
+	BRA_education_pioneer = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.15
+		fascism_drift = -0.03
+		stability_factor = 0.03
+	}
 }
