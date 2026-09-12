@@ -10,6 +10,7 @@ special_forces_quantity = {
             has_tech = marines
             has_tech = paratroopers
             has_tech = rangers_tech
+            has_tech = shocktroops
         }
     }
 
@@ -27,15 +28,37 @@ special_forces_quantity = {
 
     # EFFECTS
 
-    special_forces_cap = 0.04
-    special_forces_training_time_factor = -0.2
+    effect = {
+		unlock_subunit = rangers_support
+        unlock_subunit = pioneer_support
+	}
 
+    rangers_support = {
+        forest = {
+            attack = 0.05
+        }
+        battalion_mult = {
+            category = category_infantry_and_bicycle
+            breakthrough = 0.2
+        }
+    }
+    pioneer_support = {
+        amphibious = {
+            attack = 0.05
+        }
+        battalion_mult = {
+            category = category_infantry_and_bicycle
+            breakthrough = 0.2
+        }
+    }
+    special_forces_doctrine_cost_factor = 0.6
+    
     milestones = {
         {
-        	special_forces_cap = 0.04
-            category_special_forces = {
-                soft_attack = 0.05
-            }
+        	# special_forces_cap = 0.04
+            # category_special_forces = {
+            #     soft_attack = 0.05
+            # }
             effect = {
                 if = {
                     limit = {
@@ -51,10 +74,10 @@ special_forces_quantity = {
             }            
         }
         {
-        	special_forces_cap = 0.04
-            category_special_forces = {
-                max_organisation = 5
-            }
+        	# special_forces_cap = 0.04
+            # category_special_forces = {
+            #     max_organisation = 5
+            # }
             effect = {
                 if = {
                     limit = {
@@ -84,6 +107,7 @@ special_forces_quality = {
             has_tech = marines
             has_tech = paratroopers
             has_tech = rangers_tech
+            has_tech = shocktroops
         }
     }
 
@@ -100,22 +124,26 @@ special_forces_quality = {
     }
 
     # EFFECTS
-
+    effect = {
+		unlock_subunit = rangers_support
+        unlock_subunit = pioneer_support
+	}
     category_special_forces = {
-                max_organisation = 10
-
+        max_organisation = 10
     }
+    special_forces_attack_factor = 0.05
+    special_forces_defence_factor = 0.05
     special_forces_no_supply_grace = 24
 
     milestones = {
         {
-            category_special_forces = {
-                acclimatization_hot_climate_gain_factor = 0.1
-                acclimatization_cold_climate_gain_factor = 0.1
-                soft_attack = 0.05
-                breakthrough = 0.05
-            }
-            special_forces_cap = 0.02
+            # category_special_forces = {
+            #     acclimatization_hot_climate_gain_factor = 0.1
+            #     acclimatization_cold_climate_gain_factor = 0.1
+            #     soft_attack = 0.05
+            #     breakthrough = 0.05
+            # }
+            # special_forces_cap = 0.02
             effect = {
                 if = {
                     limit = {
@@ -131,13 +159,13 @@ special_forces_quality = {
             }            
         }
         {
-            category_special_forces = {
-                acclimatization_hot_climate_gain_factor = 0.1
-                acclimatization_cold_climate_gain_factor = 0.1
-                soft_attack = 0.05
-                defense = 0.05
-            }
-            special_forces_cap = 0.02
+            # category_special_forces = {
+            #     acclimatization_hot_climate_gain_factor = 0.1
+            #     acclimatization_cold_climate_gain_factor = 0.1
+            #     soft_attack = 0.05
+            #     defense = 0.05
+            # }
+            # special_forces_cap = 0.02
             effect = {
                 if = {
                     limit = {

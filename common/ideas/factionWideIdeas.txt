@@ -1,6 +1,7 @@
 ideas = {
     hidden_ideas = {
 		### fake errors?
+		
 		GEN_cheaper_amphib = {
 			allowed = {
 				always = no # Triggered via tech

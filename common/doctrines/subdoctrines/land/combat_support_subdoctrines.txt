@@ -433,15 +433,15 @@ field_engineering = {
     engineer = {
         river = {
             movement = 0.1
-			attack = 0.15
+			attack = 0.05
         }
         forest = {
             movement = 0.1
-			attack = 0.15
+			attack = 0.05
         }
 		 urban = {
             movement = 0.1
-			attack = 0.20
+			attack = 0.05
         }
     }
 
