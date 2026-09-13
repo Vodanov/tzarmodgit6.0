@@ -21,6 +21,10 @@ state = {
 		victory_points = {
 			7125 3 # Seoul/Keijō/Gyeongseong
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 

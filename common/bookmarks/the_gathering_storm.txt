@@ -11,9 +11,7 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				
 			}
 			focuses = {
 				FRA_devalue_the_franc
@@ -95,7 +93,7 @@ bookmarks = {
 			focuses = {
 				ITA_pact_of_steel
 				#ITA_greece_war_goal
-				ITA_italia_irredenta
+				
 			}		
 		}
 		"JAP"={
@@ -116,11 +114,10 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				
 			}
 			focuses = {
-				SOV_great_purge
+				
 				SOV_collectivist_propaganda
 				SOV_positive_heroism
 				
@@ -172,7 +169,7 @@ bookmarks = {
 			focuses = {
 				NZL_bob_semple_tank
 				NZL_the_first_labor_government
-				NZL_maori_conscription
+				
 			}
 		}
 		"SAF"={
@@ -214,9 +211,7 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_strengthen_fascists
-				HUN_demand_southern_slovakia
-				HUN_renounce_the_treaty_of_trianon
+				
 			}
 		}
 
@@ -229,7 +224,7 @@ bookmarks = {
 			}
 			focuses = {
 				ROM_governate_transnistria
-				ROM_institute_royal_dictatorship
+				
 				ROM_swamp_greater_romania
 			}
 		}

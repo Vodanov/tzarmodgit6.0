@@ -20,20 +20,9 @@ state={
 			7199 2 # Ganzhou 
 		}
 
-		1938.10.25 = {
-			JAP = {
-				set_province_controller = 1153
-				set_province_controller = 1628
-				set_province_controller = 3992
-				set_province_controller = 4038
-				set_province_controller = 4185
-				set_province_controller = 7653
-				set_province_controller = 10114
-				set_province_controller = 11988
-				set_province_controller = 13141
-
-			}
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

@@ -27,14 +27,9 @@ state={
 			infrastructure = 1
 		}
 
-		1938.10.25 = {
-			controller = JAP
-		}
-		
-		1939.1.1 = {
-			
-			owner = CHI
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 	}
 	manpower=500000

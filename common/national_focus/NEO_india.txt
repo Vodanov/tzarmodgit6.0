@@ -3154,16 +3154,13 @@ focus = {
 
         available = {
 
-            if = {
-                
-                OR = {
-                    mio:RAJ_ammunition_factory_khadki_organization = { has_mio_size > 7  }                   
-                    mio:RAJ_ordnance_factory_kanpur_organization  = { has_mio_size > 7  } 
-                    mio:RAJ_ordnance_factory_medak_organization  = { has_mio_size > 7  }  
-                    mio:RAJ_vickers_armstrong_organization  = { has_mio_size > 7  }   
-                }
-            }
-            
+                # OR = {
+                #     mio:RAJ_ammunition_factory_khadki_organization = { has_mio_size > 7  }                   
+                #     mio:RAJ_ordnance_factory_kanpur_organization  = { has_mio_size > 7  } 
+                #     mio:RAJ_ordnance_factory_medak_organization  = { has_mio_size > 7  }  
+                #     mio:RAJ_vickers_armstrong_organization  = { has_mio_size > 7  }   
+                # }
+
         }
         
         bypass = {
@@ -3177,15 +3174,34 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-           
-
-                unlock_mio_policy_tooltip = {
-                    policy = mio_policy_RAJ_general_ordnance_factory_board
+                423 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                    }
                 }
-            
-            
+                438 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                    }
+                }
+                431 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                    }
+                }
 
-            
+                # unlock_mio_policy_tooltip = {
+                #     policy = mio_policy_RAJ_general_ordnance_factory_board
+                # }
         }
     }
 

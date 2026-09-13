@@ -29,13 +29,9 @@ state= {
 			1597 1 # Liuzhou  
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				CHI = { transfer_state = PREV }
-			}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

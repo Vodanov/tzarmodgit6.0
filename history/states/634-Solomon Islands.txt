@@ -29,6 +29,10 @@ state={
 		# strategic_state_location = {
 		# 	favorable_approach = 10291
 		# }
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 

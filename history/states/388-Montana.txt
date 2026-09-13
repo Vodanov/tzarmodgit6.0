@@ -21,7 +21,10 @@ state = {
 		victory_points = {
 			4860 1 # Great Falls
 		}
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 		# Hungry Horse Dam
 		#1854 = { dam = 1 }
 

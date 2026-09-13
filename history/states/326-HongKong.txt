@@ -4,8 +4,7 @@ state=
 	name="STATE_326"
 	manpower = 1143516
 	state_category = large_town
-	history=
-	{
+	history={
 		owner = ENG
 		
 		add_core_of = CHI
@@ -19,6 +18,10 @@ state=
 				naval_base = 6
 				coastal_bunker = 1
 			}
+		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 	}
 	provinces={

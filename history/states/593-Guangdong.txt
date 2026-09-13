@@ -16,17 +16,10 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 
-		# 1936.1.1 = {
-		# 	IF = {
-		# 		limit = {
-		# 			always = no
-		# 		}
-		# 		transfer_state_to = GDC
-		# 		add_core_of = CHI
-		# 		remove_core_of = GXC
-		# 	}
-		# }
-		
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 		
 		add_core_of = CHI
 

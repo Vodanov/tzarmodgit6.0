@@ -52,6 +52,11 @@ on_actions = {
 					}
 					
 				}
+				FRA = {
+					every_core_state = {
+						remove_core_of = FRA
+					}
+				}
 				# Add a preset amount of equipment for Germany capping france, since they get none otherwise
 				GER = {
 					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 65000 producer = GER }
@@ -192,20 +197,25 @@ on_actions = {
                     improved_medium_tank_chassis = 1
                     mechanised_infantry = 1
                     }
-					# change_tag_from = FRA
+					
                 }
 				
 				762 = { set_compliance = 60 }
 				if = {
 					limit = {
 						JAP = {
-							exists = yes
+							owns_state = 282
 						}
 					}
-					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 transfer_state = 1017 }
+					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 transfer_state = 1017 transfer_state = 670 transfer_state = 741 }
+					else = {
+						FRF = { 
+							transfer_state = 671 transfer_state = 286 transfer_state = 728 transfer_state = 1017 transfer_state = 670 transfer_state = 741
+						}
+					}
 				}
-
-				#  FRA = { country_event = { id = france.800 } }
+				
+				
 				}
 			}
 			if = {
@@ -323,6 +333,17 @@ on_actions = {
  						}
 					}
 			  	}
+			}
+			IF = {
+				limit = {
+					original_tag = HOL
+				}
+				ENG = {
+					annex_country = {
+						target = HOL
+						transfer_troops = no
+					}
+				}
 			}
         }
     }

@@ -43,12 +43,9 @@ state = {
 
 		}
 
-		1938.10.25 = {
-			owner = CHI
-			add_victory_points = {
-				province = 8049
-				value = 2
-			}	
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

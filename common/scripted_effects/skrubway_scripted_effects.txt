@@ -1,4 +1,4 @@
 nzl_more_manpower_effect = {
 	custom_effect_tooltip = NZL_more_manpower_tt
-	add_to_variable = { NZL_conscription = 0.1 }
+	add_to_variable = { NZL_conscription = 0.03 }
 }

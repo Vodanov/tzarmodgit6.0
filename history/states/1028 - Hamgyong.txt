@@ -28,6 +28,10 @@ state = {
 		victory_points = {
 			898 1 # Seishin
 		}	
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 		
 	}
 

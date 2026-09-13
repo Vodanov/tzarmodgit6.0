@@ -124,213 +124,213 @@ on_actions = {
 			}
 			}
 			}
-	on_startup = {
-		effect = {
+	# on_startup = {
+	# 	effect = {
 
-			IF = {
-				limit = {
-					has_start_date = 1936.1.1.13
-				}
-				46 = {
-				add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				2 = {
-				add_extra_state_shared_building_slots = 8
-					add_building_construction = {
-						type = industrial_complex
-						level = 6
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				41 = {
-				122 = {
-					add_resource = {
-						type = aluminium
-						amount = 100
-					}
-					add_resource = {
-						type = tungsten
-						amount = 50
-					}
-					add_resource = {
-						type = steel
-						amount = 50
-					}
-				}
-			}
+	# 		IF = {
+	# 			limit = {
+	# 				has_start_date = 1936.1.1.13
+	# 			}
+	# 			46 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 				add_building_construction = {
+	# 					type = industrial_complex
+	# 					level = 2
+	# 					instant_build = yes
+	# 				}
+	# 				add_building_construction = {
+	# 					type = arms_factory
+	# 					level = 2
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 			2 = {
+	# 			add_extra_state_shared_building_slots = 8
+	# 				add_building_construction = {
+	# 					type = industrial_complex
+	# 					level = 6
+	# 					instant_build = yes
+	# 				}
+	# 				add_building_construction = {
+	# 					type = arms_factory
+	# 					level = 2
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 			41 = {
+	# 			122 = {
+	# 				add_resource = {
+	# 					type = aluminium
+	# 					amount = 100
+	# 				}
+	# 				add_resource = {
+	# 					type = tungsten
+	# 					amount = 50
+	# 				}
+	# 				add_resource = {
+	# 					type = steel
+	# 					amount = 50
+	# 				}
+	# 			}
+	# 		}
 
-			if = {
-				limit = {
-					has_game_rule = { rule = hungary_small_game option = HUNGARY_SMALL_GAME_DISABLE }
-				}
-				46 = {
-				add_extra_state_shared_building_slots = 8
-					add_building_construction = {
-						type = industrial_complex
-						level = 6
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				41 = {
-				add_extra_state_shared_building_slots = 9
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = HUN
-					}
-					remove_building = {
-				    type = arms_factory
-  					level = 200
-			}
-			remove_building = {
-				    type = industrial_complex
-  					level = 200
-			}
-			remove_building = {
-				    type = dockyard
-  					level = 200
-			}
-			}
-			}
-			if = {
-				limit = {
-					has_game_rule = { rule = hungary_small_game option = HUNGARY_SMALL_GAME_ENABLE }
-				}
-				every_state = {
-					limit = {
-						is_core_of = HUN
-					}
-					transfer_state_to = HUN
-					HUN = {
-					load_oob = HUN_1936
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = italy_war
-						option = COMPASS_ENBALED
-					}
-				}
-				every_country = {
-				limit = {
-				is_ai = no
-				}
-				news_event = news.1002
-				}
-			}
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = { rule = hungary_small_game option = HUNGARY_SMALL_GAME_DISABLE }
+	# 			}
+	# 			46 = {
+	# 			add_extra_state_shared_building_slots = 8
+	# 				add_building_construction = {
+	# 					type = industrial_complex
+	# 					level = 6
+	# 					instant_build = yes
+	# 				}
+	# 				add_building_construction = {
+	# 					type = arms_factory
+	# 					level = 2
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 			41 = {
+	# 			add_extra_state_shared_building_slots = 9
+	# 				add_building_construction = {
+	# 					type = industrial_complex
+	# 					level = 5
+	# 					instant_build = yes
+	# 				}
+	# 				add_building_construction = {
+	# 					type = arms_factory
+	# 					level = 4
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = HUN
+	# 				}
+	# 				remove_building = {
+	# 			    type = arms_factory
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = industrial_complex
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = dockyard
+  	# 				level = 200
+	# 		}
+	# 		}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = { rule = hungary_small_game option = HUNGARY_SMALL_GAME_ENABLE }
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = HUN
+	# 				}
+	# 				transfer_state_to = HUN
+	# 				HUN = {
+	# 				load_oob = HUN_1936
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = {
+	# 					rule = italy_war
+	# 					option = COMPASS_ENBALED
+	# 				}
+	# 			}
+	# 			every_country = {
+	# 			limit = {
+	# 			is_ai = no
+	# 			}
+	# 			news_event = news.1002
+	# 			}
+	# 		}
 		
 		
-			if = {
-				limit = {
-					has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_ENABLE }
-				}
-				every_state = {
-					limit = {
-						OR = {
-						is_core_of = CAN
-						is_core_of = SAF
-					}
-					}
-					transfer_state_to = CAN
-				}
-				CAN = {
-				load_oob = SAF_1936
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
-				}
-				every_state = {
-					limit = {
-						is_core_of = CAN
-					}
-					transfer_state_to = SWE
-				}
-			}
-			every_state = {
-			limit = {
-			AND = {
-				is_owned_by = SWE
-				not = {
-				is_core_of = SOV
-				}
-			}
-			}
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_ENABLE }
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					OR = {
+	# 					is_core_of = CAN
+	# 					is_core_of = SAF
+	# 				}
+	# 				}
+	# 				transfer_state_to = CAN
+	# 			}
+	# 			CAN = {
+	# 			load_oob = SAF_1936
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = CAN
+	# 				}
+	# 				transfer_state_to = SWE
+	# 			}
+	# 		}
+	# 		every_state = {
+	# 		limit = {
+	# 		AND = {
+	# 			is_owned_by = SWE
+	# 			not = {
+	# 			is_core_of = SOV
+	# 			}
+	# 		}
+	# 		}
 			
-			remove_building = {
-				    type = arms_factory
-  					level = 200
-			}
-			remove_building = {
-				    type = industrial_complex
-  					level = 200
-			}
-			remove_building = {
-				    type = dockyard
-  					level = 200
-			}
-			}
-			every_state = {
-			limit = {
-			AND = {
-				is_owned_by = ROM
-				OR = {
-				is_core_of	= HUN
-				is_core_of = BUL
-				}
-			}
-			}
+	# 		remove_building = {
+	# 			    type = arms_factory
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = industrial_complex
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = dockyard
+  	# 				level = 200
+	# 		}
+	# 		}
+	# 		every_state = {
+	# 		limit = {
+	# 		AND = {
+	# 			is_owned_by = ROM
+	# 			OR = {
+	# 			is_core_of	= HUN
+	# 			is_core_of = BUL
+	# 			}
+	# 		}
+	# 		}
 			
-			remove_building = {
-				    type = arms_factory
-  					level = 200
-			}
-			remove_building = {
-				    type = industrial_complex
-  					level = 200
-			}
-			remove_building = {
-				    type = dockyard
-  					level = 200
-			}
-			}
-		}
+	# 		remove_building = {
+	# 			    type = arms_factory
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = industrial_complex
+  	# 				level = 200
+	# 		}
+	# 		remove_building = {
+	# 			    type = dockyard
+  	# 				level = 200
+	# 		}
+	# 		}
+	# 	}
 		
-	}
-	}
+	# }
+	# }
 	on_declare_war = {
 		effect = {
 		

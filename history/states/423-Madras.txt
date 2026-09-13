@@ -22,5 +22,9 @@ state={
 		victory_points = {
 			10278 5 # Madras
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 }

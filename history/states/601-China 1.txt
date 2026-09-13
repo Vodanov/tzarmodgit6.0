@@ -18,12 +18,9 @@ state={
 		victory_points = {
 			10856 1
 		}
-		1939.1.1 = {
-			buildings = {
-				infrastructure = 1
-
-			}
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

@@ -10,8 +10,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
+
 	manpower=984612
 	state_category = rural
 	buildings_max_level_factor=1.000

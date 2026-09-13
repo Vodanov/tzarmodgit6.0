@@ -32,6 +32,10 @@ state = {
 		victory_points = {
 			12811 1
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 

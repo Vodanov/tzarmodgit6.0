@@ -28,15 +28,9 @@ state = {
 			industrial_complex = 1
 		}
 
-		1939.1.1 = {
-
-			remove_building = {
-				type = industrial_complex
-				level = 1
-			}
-
-			owner = CHI
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

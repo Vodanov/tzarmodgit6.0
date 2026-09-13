@@ -30,6 +30,10 @@ state={
 			12338 1 # Darjeeling 
 		}
 
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 
 	provinces={

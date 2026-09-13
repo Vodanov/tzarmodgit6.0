@@ -38,6 +38,10 @@ state = {
 		victory_points = {
 			9807 1 # Morioka
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 

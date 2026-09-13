@@ -2409,7 +2409,7 @@ generic_escort_ship_organization = {
 		
 		NOT = {
 			AND = {
-				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE original_tag = ICE }
+				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE  }
 				
 			}
 		}
@@ -2642,10 +2642,7 @@ generic_raider_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 
 	allowed = {
-		AND = {
-			
-			original_tag = ICE
-		}
+		
 		#always = no # Archetype only - countries using it have their own versions
 	}
 

@@ -19,7 +19,10 @@ state={
 			5033 5 
 		}
 		
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 
 	local_supplies=0.0 

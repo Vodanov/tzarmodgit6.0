@@ -44,14 +44,9 @@ state = {
 			11925 5 # Kumamoto
 		}
 
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 2
-				7110 = {
-					 # Sasebo Naval Arsenal
-				}
-			}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

@@ -12,15 +12,9 @@ state={
 			arms_factory = 2
 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				infrastructure = 2
-				air_base = 1
-				arms_factory = 1
-
-			}
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 		victory_points = {
 			4504 3 

@@ -23,6 +23,10 @@ state = {
 		victory_points = {
 			4241 5 # Davao
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 		
 	}
 

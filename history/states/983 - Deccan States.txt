@@ -20,6 +20,10 @@ state={
 			12295 2 # Kolhapur
 		}
 
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 
 	provinces={

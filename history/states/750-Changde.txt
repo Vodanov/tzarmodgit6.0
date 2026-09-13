@@ -20,15 +20,9 @@ state={
 		victory_points = {
 			7101 10 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				infrastructure = 3 #was: 6
-				air_base = 3
-				arms_factory = 1
-
-			}
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 
 	}

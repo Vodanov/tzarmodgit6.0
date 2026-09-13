@@ -17,9 +17,10 @@ ideas = {
 			}
 			
 			modifier = {				
-				resistance_damage_to_garrison = -0.25
-				non_core_manpower = 0.15
+				# resistance_damage_to_garrison = -0.25
+				# non_core_manpower = 0.15
 				#foreign_subversive_activites = -0.4
+				conscription = 0.03
 			}
 		}
 		

@@ -44,9 +44,9 @@ state={
 			12026 2 # Baoding
 		}
 
-		1938.10.25 = {
-			owner = CHI
-			controller = JAP
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 	}
 

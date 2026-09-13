@@ -47,6 +47,10 @@ state={
 		strategic_province_location = {
 			natural_harbor = 13041
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 

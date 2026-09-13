@@ -23,6 +23,10 @@ state=
 		strategic_state_location = {
 			favorable_approach = 12140
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 
 	}
 	provinces={

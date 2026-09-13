@@ -14,7 +14,10 @@ state={
 		victory_points = { 	10772 15 }
 		victory_points = { 	10898 1 }
 		victory_points = { 10173 3 }
-
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 	state_category = town
 	manpower=16024000

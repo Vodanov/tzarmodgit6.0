@@ -34,12 +34,9 @@ state = {
 			7315 10 # Seattle
 		}
 
-		1939.1.1 = {
-			buildings = {
-				7315 = {
-					 # Boeing Factories
-				}
-			}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
 		}
 	}
 

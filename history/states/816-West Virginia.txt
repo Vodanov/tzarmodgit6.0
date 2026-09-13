@@ -13,6 +13,10 @@ state={
 		victory_points = {
 			7588 3
 		}
+		1936.1.1.16 = {
+			owner = SWE
+			add_core_of = SWE
+		}
 	}
 	provinces={
 		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
